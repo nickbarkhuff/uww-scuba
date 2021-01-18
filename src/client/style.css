@@ -1,0 +1,46 @@
+/* Variables */
+.varPageGutters{margin:0 10%}
+.varSectionSpacing{margin-bottom:3rem}
+.varSectionPadding{padding:2rem}
+.varSectionRadius{border-radius:1rem}
+.varSectionShadow{box-shadow:0 0 2rem 0.5rem black}
+.varLogoHeight{height:3.5rem}
+
+@media only screen and (max-width: 750px) {
+	.varPageGutters{margin:0 3%}
+	.varLogoHeight{height:2.5rem}
+}
+
+/* Font Family */
+.ffSansSerif{font-family:sans-serif}
+
+/* Font Size */
+.fsNormal{font-size:1rem}
+.fs1{font-size:1.3rem}
+
+/* Color */
+.cWhite{color:white}
+.cBlack{color:black}
+
+/* Background Color */
+.bgWhite{background-color:white}
+.bgBlack{background-color:black}
+.bgBlue{background-color:#11044f}
+
+/* Display */
+.dFlex{display:flex}
+
+/* Other */
+.flex1{flex:1}
+.fdColumn{flex-direction:column}
+.fdColumnReverse{flex-direction:column-reverse}
+.aiCenter{align-items:center}
+.jcCenter{justify-content:center}
+.hFull{height:100%}
+.mhFull{min-height:100%}
+.mNone{margin:0}
+.ofAuto{overflow:auto}
+.taCenter{text-align:center}
+.tdNone{text-decoration:none}
+.cInherit{color:inherit}
+.fwBold{font-weight:bold}
