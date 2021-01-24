@@ -9,6 +9,7 @@
 .tdNone{text-decoration: none}
 .cInherit{color: inherit}
 .fwBold{font-weight: bold}
+.taCenter{text-align: center}
 
 .varGutters{padding: 0 10rem}
 .varSectionPadding{padding: 2rem}
@@ -16,6 +17,7 @@
 .varSectionSpacing{min-height: 3rem}
 .varSectionRadius{border-radius: 0.5rem}
 .varLogoHeight{height: 3.5rem}
+.varJumbotronHeight{min-height: 500px}
 
 .c1{color: white}
 .c2{color: black}

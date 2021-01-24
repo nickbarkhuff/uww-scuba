@@ -12,7 +12,7 @@ const pages = [
 		priority: -1,
 		content: (
 			<Fragment>
-				<Section bgImage={scuba} full>
+				<Section className="varJumbotronHeight" bgImage={scuba} bgPosition="top" full>
 					<h1>Your diving adventure begins here</h1>
 					<p>
 						foobar
@@ -71,9 +71,9 @@ const App = () => (
 	<Wrapper>
 		<Section className="dFlex aiCenter" bg="white" slim full>
 			<div className="flex1">
-				<a href="/">
+				<Link to="/">
 					<img className="varLogoHeight" alt="Logo" src={logo}/>
-				</a>
+				</Link>
 			</div>
 			<div>
 				{pages.map((page, i) => (
@@ -103,7 +103,9 @@ const App = () => (
 
 		<Spacer push/>
 
-		<Section bg="black" full>Footer</Section>
+		<Section className="taCenter" bg="black" full>
+			© {new Date().getFullYear()}, Under Water Works INC
+		</Section>
 	</Wrapper>
 );
 

@@ -18,7 +18,7 @@ export const Section = (props) => {
                     props.bgImage ? {
                         backgroundImage: `url(${props.bgImage})`,
                         backgroundSize: "cover",
-                        backgroundPosition: "center",
+                        backgroundPosition: props.bgPosition || "center",
                         backgroundRepeat: "no-repeat"
                     } : {}
                 }
@@ -30,7 +30,7 @@ export const Section = (props) => {
                         + (props.className)
                     }
                     style={
-                        props.full || !props.bg ? {
+                        props.full || !(props.bg || props.bgImage) ? {
                             paddingLeft: 0,
                             paddingRight: 0
                         } : {}
