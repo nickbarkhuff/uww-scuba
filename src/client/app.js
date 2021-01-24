@@ -1,10 +1,20 @@
 import React from "react";
 import {Section, Spacer, Wrapper} from "./components/components.js";
 import scuba from "./assets/scuba.png";
+import logo from "./assets/logo.png";
 
 const App = () => (
 	<Wrapper>
-		<Section bg="white" full>Nav</Section>
+		<Section className="dFlex aiCenter" bg="white" slim full>
+			<div className="flex1">
+				<a href="/">
+					<img className="varLogoHeight" alt="Logo" src={logo}/>
+				</a>
+			</div>
+			<div>
+				Items
+			</div>
+		</Section>
 
 		<Section bgImage={scuba} full>
 			<h1>Your diving adventure begins here</h1>

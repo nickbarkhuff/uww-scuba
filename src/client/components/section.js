@@ -24,7 +24,11 @@ export const Section = (props) => {
                 }
             >
                 <div
-                    className="varSectionPadding"
+                    className={
+                        ""
+                        + (props.slim ? "varSectionPaddingSlim " : "varSectionPadding ")
+                        + (props.className)
+                    }
                     style={
                         props.full || !props.bg ? {
                             paddingLeft: 0,

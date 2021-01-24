@@ -5,11 +5,14 @@
 .dFlex{display: flex}
 .fdColumn{flex-direction: column}
 .flex1{flex: 1}
+.aiCenter{align-items: center}
 
 .varGutters{padding: 0 10rem}
 .varSectionPadding{padding: 2rem}
+.varSectionPaddingSlim{padding: 1rem}
 .varSectionSpacing{min-height: 3rem}
 .varSectionRadius{border-radius: 0.5rem}
+.varLogoHeight{height: 3.5rem}
 
 .c1{color: white}
 .c2{color: black}
