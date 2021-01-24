@@ -6,6 +6,9 @@
 .fdColumn{flex-direction: column}
 .flex1{flex: 1}
 .aiCenter{align-items: center}
+.tdNone{text-decoration: none}
+.cInherit{color: inherit}
+.fwBold{font-weight: bold}
 
 .varGutters{padding: 0 10rem}
 .varSectionPadding{padding: 2rem}
