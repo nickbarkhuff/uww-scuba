@@ -1,62 +1,38 @@
-import React, {Fragment} from "react";
-import {Switch, Route, Link} from "react-router-dom";
-import {Helmet} from "react-helmet";
-import Section from "./components/section.js";
-import NavItem from "./components/nav-item.js";
-import {Home, Classes, Equipment, Schedule, Staff} from "./pages/pages.js";
-import logo from "./assets/logo.png";
+import React from "react";
+import {Section, Spacer, Wrapper} from "./components/components.js";
+import scuba from "./assets/scuba.png";
 
-const App = (props) => {
-	return (
-		<div className="mhFull dFlex fdColumn">
+const App = () => (
+	<Wrapper>
+		<Section bg="white" full>Nav</Section>
 
-			{/* Nav */}
-			<Section className="dFlex aiCenter" bg="white" shadow full>
-				<div className="flex1">
-					<Link to="/">
-						<img className="varLogoHeight" alt="Logo" src={logo}/>
-					</Link>
-				</div>
-				<div>
-					<NavItem to="/">Home</NavItem>
-					<NavItem to="/classes">Classes</NavItem>
-					<NavItem to="/equipment">Equipment</NavItem>
-					<NavItem to="/schedule">Schedule</NavItem>
-					<NavItem to="/staff" last>Staff</NavItem>
-				</div>
-			</Section>
+		<Section bgImage={scuba} full>
+			<h1>Your diving adventure begins here</h1>
+			<p>
+				foobar
+			</p>
+			<p>
+				<button>Take a class</button>
+				<button>Contact us</button>
+			</p>
+		</Section>
 
-			{/* Content */}
-			<Switch>
-				<Route path="/classes">
-					<Helmet><title>Classes</title></Helmet>
-					<Classes/>
-				</Route>
-				<Route path="/equipment">
-					<Helmet><title>Equipment</title></Helmet>
-					<Equipment/>
-				</Route>
-				<Route path="/schedule">
-					<Helmet><title>Schedule</title></Helmet>
-					<Schedule/>
-				</Route>
-				<Route path="/staff">
-					<Helmet><title>Staff</title></Helmet>
-					<Staff/>
-				</Route>
-				<Route path="/">
-					<Helmet><title>Home</title></Helmet>
-					<Home/>
-				</Route>
-			</Switch>
+		<Spacer/>
 
-			{/* Footer */}
-			<Section className="taCenter" bg="black" full last>
-				© {new Date().getFullYear()}, Under Water Works INC
-			</Section>
+		<Section bg="white">Foo</Section>
 
-		</div>
-	);
-};
+		<Spacer/>
+
+		<Section>Bar</Section>
+
+		<Spacer/>
+
+		<Section bg="red" full>Baz</Section>
+
+		<Spacer push/>
+
+		<Section bg="black" full>Footer</Section>
+	</Wrapper>
+);
 
 export default App;
