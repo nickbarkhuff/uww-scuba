@@ -19,6 +19,12 @@ button{border: 0}
 
 @media only screen and (max-width: 1200px) {
     .varGutters{padding: 0 2rem}
+    .varParagraphReduced{width: 80%}
+}
+
+@media only screen and (max-width: 800px) {
+    .varParagraphReduced{width: 100%}
+    .varLogoHeight{height: 2rem}
 }
 
 .c0{color: inherit}
@@ -62,3 +68,4 @@ button{border: 0}
 .cursorPointer{cursor: pointer}
 .ptopNone{padding-top: 0}
 .pbottomNone{padding-bottom: 0}
+.mwFull{max-width: 100%}

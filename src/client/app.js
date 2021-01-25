@@ -36,7 +36,7 @@ const pages = [
 						We have returned to regular hours, although shorter than they used to be! No appointments are necessary, but please remember to bring your facemask with you, as they are required to enter the store.  Thank you for supporting your local dive shop!  We appreciate you more than you know!
 					</P>
 					<P noBottomPadding>
-						<img src={hours} alt="Hours"/>
+						<img className="mwFull" src={hours} alt="Hours"/>
 					</P>
 				</Section>
 
