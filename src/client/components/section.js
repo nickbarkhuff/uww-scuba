@@ -27,7 +27,7 @@ export const Section = (props) => {
                     className={
                         ""
                         + (props.slim ? "varSectionPaddingSlim " : "varSectionPadding ")
-                        + (props.className)
+                        + (props.className || "")
                     }
                     style={
                         props.full || !(props.bg || props.bgImage) ? {
