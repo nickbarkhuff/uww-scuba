@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
-import {Section, Spacer, Wrapper} from "./components/components.js";
+import {Section, Spacer, Wrapper, Button} from "./components/components.js";
 import scuba from "./assets/scuba.png";
 import logo from "./assets/logo.png";
 
@@ -12,26 +12,45 @@ const pages = [
 		priority: -1,
 		content: (
 			<Fragment>
+
+				{/* Jumbotron */}
 				<Section className="varJumbotronHeight" bgImage={scuba} bgPosition="top" full>
-					<h1>Your diving adventure begins here</h1>
-					<p>
+					<p className="fs6">
+						Your diving adventure starts here
+					</p>
+					<p className="fs2">
 						foobar
 					</p>
 					<p>
-						<button>Take a class</button>
-						<button>Contact us</button>
+						<Button to="/classes">Take a class</Button>
 					</p>
 				</Section>
+
 				<Spacer/>
+
+				{/* Hours */}
 				<Section bg="white">Hours</Section>
+
 				<Spacer/>
+
+				{/* Learn to dive */}
 				<Section>Learn to dive</Section>
+
 				<Spacer/>
+
+				{/* Fun dive days */}
 				<Section bg="white" full>Fun dive days</Section>
+
 				<Spacer/>
+
+				{/* Our team */}
 				<Section>Our team</Section>
+
 				<Spacer/>
-				<Section bg="red" full>Contact Us</Section>
+
+				{/* Contact us */}
+				<Section bg="red" full>Contact us</Section>
+
 			</Fragment>
 		)
 	},
@@ -87,11 +106,11 @@ const App = () => (
 					<img className="varLogoHeight" alt="Logo" src={logo}/>
 				</Link>
 			</div>
-			<div>
+			<div className="fs2">
 				{pages.map((page, i) => (
 					<Fragment key={page.path}>
 						<Link to={page.path} class={
-							"tdNone cInherit "
+							"tdNone c0 "
 							+ (useLocation().pathname === page.path ? "fwBold " : "")
 						}>
 							{page.name}
