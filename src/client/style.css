@@ -7,6 +7,8 @@ button{border: 0}
 .varSectionPaddingSlim{padding: 1rem}
 .varSectionSpacing{min-height: 3rem}
 .varParagraphPadding{padding: 1rem 0}
+.varParagraphReduced{width: 60%}
+.varParagraphReduced{margin: auto}
 .varLogoHeight{height: 3.5rem}
 .varJumbotronHeight{min-height: 650px}
 .varButton{padding: 1rem}

@@ -6,6 +6,7 @@ export const P = (props) => {
             "varParagraphPadding "
             + (props.noTopPadding ? "ptopNone " : "")
             + (props.noBottomPadding ? "pbottomNone " : "")
+            + (props.reduced ? "varParagraphReduced " : "")
             + (props.className || "")
         }>
             {props.children}

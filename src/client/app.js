@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet";
 import {Section, Spacer, Wrapper, Button, P} from "./components/components.js";
 import scuba from "./assets/diver.jpeg";
 import logo from "./assets/logo.png";
+import hours from "./assets/hours.png";
 
 const pages = [
 	{
@@ -18,7 +19,7 @@ const pages = [
 					<div className="varSectionPadding bg3Light c1 br1 dInlineBlock taCenter">
 						<P className="fs6 fwBold" noTopPadding>Your diving adventure starts here</P>
 						<P className="fs2">
-							Explore an exciting new world, right here in the gorgeous Pacific Northwest.
+							Explore an exciting new world, right here in the gorgeous Pacific Northwest!
 						</P>
 						<P noBottomPadding>
 							<Button to="/classes">Take a class</Button>
@@ -29,7 +30,15 @@ const pages = [
 				<Spacer/>
 
 				{/* Hours */}
-				<Section bg="white" shadow>Hours</Section>
+				<Section className="taCenter" bg="white" shadow>
+					<P className="fs5 fwBold" noTopPadding>Hours</P>
+					<P reduced>
+						We have returned to regular hours, although shorter than they used to be! No appointments are necessary, but please remember to bring your facemask with you, as they are required to enter the store.  Thank you for supporting your local dive shop!  We appreciate you more than you know!
+					</P>
+					<P noBottomPadding>
+						<img src={hours} alt="Hours"/>
+					</P>
+				</Section>
 
 				<Spacer/>
 
