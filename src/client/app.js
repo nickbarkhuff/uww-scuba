@@ -22,6 +22,16 @@ const pages = [
 						<button>Contact us</button>
 					</p>
 				</Section>
+				<Spacer/>
+				<Section bg="white">Hours</Section>
+				<Spacer/>
+				<Section>Learn to dive</Section>
+				<Spacer/>
+				<Section bg="white" full>Fun dive days</Section>
+				<Spacer/>
+				<Section>Our team</Section>
+				<Spacer/>
+				<Section bg="red" full>Contact Us</Section>
 			</Fragment>
 		)
 	},
@@ -69,6 +79,8 @@ const pages = [
 
 const App = () => (
 	<Wrapper>
+
+		{/* Nav */}
 		<Section className="dFlex aiCenter" bg="white" slim full>
 			<div className="flex1">
 				<Link to="/">
@@ -90,6 +102,7 @@ const App = () => (
 			</div>
 		</Section>
 
+		{/* Page Content */}
 		<Switch>
 			{[...pages]
 				.sort((a, b) => (a.priority || 0) < (b.priority || 0))
@@ -101,11 +114,12 @@ const App = () => (
 				))}
 		</Switch>
 
+		{/* Footer */}
 		<Spacer push/>
-
 		<Section className="taCenter" bg="black" full>
 			© {new Date().getFullYear()}, Under Water Works INC
 		</Section>
+
 	</Wrapper>
 );
 
