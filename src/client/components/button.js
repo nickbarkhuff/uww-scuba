@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export const Button = (props) => {
     const button = (
         <button
-            className="varButton c0 bg4 fs2 cursorPointer bNone"
+            className="varButton c1 bg4 fs2 br1 cursorPointer bNone"
             onClick={props.onClick}
         >
             {props.children}

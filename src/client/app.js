@@ -1,8 +1,8 @@
 import React, {Fragment} from "react";
 import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
-import {Section, Spacer, Wrapper, Button} from "./components/components.js";
-import scuba from "./assets/scuba.png";
+import {Section, Spacer, Wrapper, Button, P} from "./components/components.js";
+import scuba from "./assets/diver.jpeg";
 import logo from "./assets/logo.png";
 
 const pages = [
@@ -15,21 +15,21 @@ const pages = [
 
 				{/* Jumbotron */}
 				<Section className="varJumbotronHeight" bgImage={scuba} bgPosition="top" full>
-					<p className="fs6">
-						Your diving adventure starts here
-					</p>
-					<p className="fs2">
-						foobar
-					</p>
-					<p>
-						<Button to="/classes">Take a class</Button>
-					</p>
+					<div className="varSectionPadding bg3Light c1 br1 dInlineBlock taCenter">
+						<P className="fs6 fwBold" noTopPadding>Your diving adventure starts here</P>
+						<P className="fs2">
+							Explore an exciting new world, right here in the gorgeous Pacific Northwest.
+						</P>
+						<P noBottomPadding>
+							<Button to="/classes">Take a class</Button>
+						</P>
+					</div>
 				</Section>
 
 				<Spacer/>
 
 				{/* Hours */}
-				<Section bg="white">Hours</Section>
+				<Section bg="white" shadow>Hours</Section>
 
 				<Spacer/>
 

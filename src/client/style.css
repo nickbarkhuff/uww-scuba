@@ -1,16 +1,21 @@
+*{box-sizing: border-box}
+
 .varGutters{padding: 0 10rem}
-.varSectionPadding{padding: 2rem}
+.varSectionPadding{padding: 2.5rem}
 .varSectionPaddingSlim{padding: 1rem}
 .varSectionSpacing{min-height: 3rem}
-.varSectionRadius{border-radius: 0.5rem}
+.varParagraphPadding{padding: 1rem 0}
 .varLogoHeight{height: 3.5rem}
-.varJumbotronHeight{min-height: 500px}
+.varJumbotronHeight{min-height: 650px}
 .varButton{padding: 1rem}
-.varButton{border-radius: 0.5rem}
 .varButton:hover{box-shadow: 5px 10px 10px 0 black}
 .varButton:active{box-shadow: 5px 5px 10px 0 black}
 .varButton:hover{transform: translateY(-5px)}
 .varButton:active{transform: translateY(0)}
+
+@media only screen and (max-width: 1200px) {
+    .varGutters{padding: 0 2rem}
+}
 
 .c0{color: inherit}
 .c1{color: white}
@@ -18,6 +23,7 @@
 .bg1{background-color: #192a56}
 .bg2{background-color: white}
 .bg3{background-color: black}
+.bg3Light{background-color: rgba(0,0,0,0.75)}
 .bg4{background-color: #de3c4b}
 .fs1{font-size: 1rem}
 .fs2{font-size: 1.25rem}
@@ -26,12 +32,23 @@
 .fs5{font-size: 2rem}
 .fs6{font-size: 2.5rem}
 .flex1{flex: 1}
+.bs1{box-shadow: 0 0 25px 0 black}
+.br1{border-radius: 0.5rem}
+
+@media only screen and (max-width: 800px) {
+    .fs2{font-size: 1.2rem}
+    .fs3{font-size: 1.4rem}
+    .fs4{font-size: 1.6rem}
+    .fs5{font-size: 1.8rem}
+    .fs6{font-size: 2rem}
+}
 
 .hFull{height: 100%}
 .mNone{margin: 0}
 .ofAuto{overflow: auto}
 .ffSansSerif{font-family: sans-serif}
 .dFlex{display: flex}
+.dInlineBlock{display: inline-block}
 .fdColumn{flex-direction: column}
 .aiCenter{align-items: center}
 .tdNone{text-decoration: none}
@@ -39,3 +56,5 @@
 .taCenter{text-align: center}
 .bNone{border: 0}
 .cursorPointer{cursor: pointer}
+.ptopNone{padding-top: 0}
+.pbottomNone{padding-bottom: 0}

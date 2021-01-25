@@ -9,7 +9,7 @@ export const Section = (props) => {
             <div
                 className={
                     ""
-                    + (props.full ? "varGutters " : "varSectionRadius ")
+                    + (props.full ? "varGutters " : "br1 ")
                     + (props.bg === "white" ? "c2 bg2 " : "")
                     + (props.bg === "black" ? "bg3 " : "")
                     + (props.bg === "red" ? "bg4 " : "")
@@ -27,6 +27,7 @@ export const Section = (props) => {
                     className={
                         ""
                         + (props.slim ? "varSectionPaddingSlim " : "varSectionPadding ")
+                        + (props.shadow ? "bs1 " : "")
                         + (props.className || "")
                     }
                     style={
