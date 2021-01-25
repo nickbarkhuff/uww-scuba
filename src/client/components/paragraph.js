@@ -3,7 +3,7 @@ import React from "react";
 export const P = (props) => {
     return (
         <p className={
-            "varParagraphPadding mNone "
+            "varParagraphPadding "
             + (props.noTopPadding ? "ptopNone " : "")
             + (props.noBottomPadding ? "pbottomNone " : "")
             + (props.className || "")

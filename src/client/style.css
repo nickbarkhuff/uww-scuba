@@ -1,4 +1,6 @@
 *{box-sizing: border-box}
+p{margin: 0}
+button{border: 0}
 
 .varGutters{padding: 0 10rem}
 .varSectionPadding{padding: 2.5rem}
