@@ -5,6 +5,9 @@ import {Section, Spacer, Wrapper, Button, P, Card} from "./components/components
 import scuba from "./assets/diver.jpeg";
 import logo from "./assets/logo.png";
 import hours from "./assets/hours.png";
+import gretchen from "./assets/staff/gretchen-slack.png";
+import dave from "./assets/staff/dave-ishmael.png";
+import david from "./assets/staff/david-frye.png";
 
 const pages = [
 	{
@@ -43,10 +46,7 @@ const pages = [
 				<Spacer/>
 
 				{/* Learn to dive */}
-				<Section>
-					<P className="fs5" noTopPadding>What's new</P>
-					<Card></Card>
-				</Section>
+				<Section>Learn to dive</Section>
 
 				<Spacer/>
 
@@ -56,12 +56,29 @@ const pages = [
 				<Spacer/>
 
 				{/* Our team */}
-				<Section>Our team</Section>
-
-				<Spacer/>
-
-				{/* Contact us */}
-				<Section bg="red" full>Contact us</Section>
+				<Section>
+					<P className="fs5" noTopPadding>Our team</P>
+					<div className="dFlex jcSpaceBetween">
+						<Card
+							title={<span>Gretchen <span className="fwBold">Slack</span></span>}
+							subtitle="Owner & Training Director"
+							img={gretchen}
+							content="I started diving in 2003, taking my Basic Open Water Diver training here at Under Water Works.  While not initially sold on the idea of Scuba Diving, by the time I took my first breath underwater, I was hooked, and have had some amazing experiences underwater since!  By far the majority of my diving has been in the Pacific Northwest, and even after visiting several warm water locations, it is still my favourite place to dive!  The life in the Pacific Northwest is amazingly beautiful and abundant, and I continue to have new and unique experiences, even at dive sites I've visited hundreds of times."
+						/>
+						<Card
+							title={<span>Dave <span className="fwBold">Ishmael</span></span>}
+							subtitle="Service Technician"
+							img={dave}
+							content="As a child I learned of Scuba Diving by watching Sea Hunt and Jacques Cousteau TV programs.  I decided as a boy I wanted to become a professional diver and explore the underwater world.  I became certified as a NAUI Scuba Diver in 1976 and worked my way up the NAUI ranks. In 1986 I became a PADI Instructor, and have also been a Certified Equipment Technician for over 30 years.  My diving has taken me to the Caribbean, Mexico, Hawaii, and Canada, although my favorite dives have been here in the Pacific Northwest."
+						/>
+						<Card
+							title={<span>Gretchen <span className="fwBold">Frye</span></span>}
+							subtitle="Master Scuba Diver"
+							img={david}
+							content="From an early age I have enjoyed being in, on, and around water. As a result, I have participated in many water related activities: competitive swimming, water polo, lifeguard, Water Safety Instructor, freediver, scuba diver, scuba instructor, and boat captain. Soon after being certified as a PADI Open Water Diver, I found that I wasn't able to dive as often as I might like so I quickly took my continuing education classes of Enriched Air Nitrox, Advanced Open Water, and Rescue diver. I still wasn’t diving enough and that had me dreaming about the future and how to dive more often."
+						/>
+					</div>
+				</Section>
 
 			</Fragment>
 		)

@@ -16,6 +16,7 @@ button{border: 0}
 .varButton:active{box-shadow: 5px 5px 10px 0 black}
 .varButton:hover{transform: translateY(-5px)}
 .varButton:active{transform: translateY(0)}
+.varCardPadding{padding: 2rem}
 
 @media only screen and (max-width: 1200px) {
     .varGutters{padding: 0 2rem}
@@ -44,6 +45,9 @@ button{border: 0}
 .flex1{flex: 1}
 .bs1{box-shadow: 0 0 25px 0 black}
 .br1{border-radius: 0.5rem}
+.ptopNone{padding-top: 0}
+.pbottomNone{padding-bottom: 0}
+.pbottom1{padding-bottom: 1rem}
 
 @media only screen and (max-width: 800px) {
     .fs2{font-size: 1.2rem}
@@ -66,6 +70,6 @@ button{border: 0}
 .taCenter{text-align: center}
 .bNone{border: 0}
 .cursorPointer{cursor: pointer}
-.ptopNone{padding-top: 0}
-.pbottomNone{padding-bottom: 0}
 .mwFull{max-width: 100%}
+.fstyleItalic{font-style: italic}
+.jcSpaceBetween{justify-content: space-between}
