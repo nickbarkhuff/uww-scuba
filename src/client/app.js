@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
-import {Section, Spacer, Wrapper, Button, P} from "./components/components.js";
+import {Section, Spacer, Wrapper, Button, P, Card} from "./components/components.js";
 import scuba from "./assets/diver.jpeg";
 import logo from "./assets/logo.png";
 import hours from "./assets/hours.png";
@@ -32,7 +32,7 @@ const pages = [
 				{/* Hours */}
 				<Section className="taCenter" bg="white" shadow>
 					<P className="fs5 fwBold" noTopPadding>Hours</P>
-					<P reduced>
+					<P className="fs2" reduced>
 						We have returned to regular hours, although shorter than they used to be! No appointments are necessary, but please remember to bring your facemask with you, as they are required to enter the store.  Thank you for supporting your local dive shop!  We appreciate you more than you know!
 					</P>
 					<P noBottomPadding>
@@ -43,7 +43,10 @@ const pages = [
 				<Spacer/>
 
 				{/* Learn to dive */}
-				<Section>Learn to dive</Section>
+				<Section>
+					<P className="fs5" noTopPadding>What's new</P>
+					<Card></Card>
+				</Section>
 
 				<Spacer/>
 
@@ -118,7 +121,7 @@ const App = () => (
 			<div className="fs2">
 				{pages.map((page, i) => (
 					<Fragment key={page.path}>
-						<Link to={page.path} class={
+						<Link to={page.path} className={
 							"tdNone c0 "
 							+ (useLocation().pathname === page.path ? "fwBold " : "")
 						}>

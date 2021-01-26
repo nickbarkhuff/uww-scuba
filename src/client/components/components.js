@@ -3,5 +3,6 @@ import {Spacer} from "./spacer.js";
 import {Wrapper} from "./wrapper.js";
 import {Button} from "./button.js";
 import {P} from "./paragraph.js";
+import {Card} from "./card.js";
 
-export {Section, Spacer, Wrapper, Button, P};
+export {Section, Spacer, Wrapper, Button, P, Card};
