@@ -36,7 +36,7 @@ const pages = [
 				<Section className="taCenter" bg="white" shadow>
 					<P className="fs5 fwBold" noTopPadding>Hours</P>
 					<P className="fs2" reduced>
-						We have returned to regular hours, although shorter than they used to be! No appointments are necessary, but please remember to bring your facemask with you, as they are required to enter the store.  Thank you for supporting your local dive shop!  We appreciate you more than you know!
+						We have returned to regular hours, although shorter than they used to be! No appointments are necessary, but please remember to bring your facemask with you, as they are required to enter the store. Thank you for supporting your local dive shop! We appreciate you more than you know!
 					</P>
 					<P noBottomPadding>
 						<img className="mwFull" src={hours} alt="Hours"/>
@@ -46,7 +46,13 @@ const pages = [
 				<Spacer/>
 
 				{/* Learn to dive */}
-				<Section>Learn to dive</Section>
+				<Section>
+					<P className="fs5" noTopPadding>Learn to dive with us!</P>
+					<P>
+						When choosing a dive shop, the most important thing to consider is your instructors. SCUBA is a dangerous sport, so you'll need to learn the do's and don'ts under close supervision from people you can trust. At Under Water Works, <span className="fwBold">our top priority is safety</span>; you'll learn how to look out for yourself and others from instructors with years of experience under their belts.
+					</P>
+					<P className="" noBottomPadding>(classes)</P>
+				</Section>
 
 				<Spacer/>
 
@@ -58,18 +64,22 @@ const pages = [
 				{/* Our team */}
 				<Section>
 					<P className="fs5" noTopPadding>Our team</P>
-					<div className="dFlex jcSpaceBetween">
+					<P>Under Water Works was opened in 1975, by Jerry and Hilde Rood. They first began by teaching classes at Tigard High School, and opened the retail shop shortly afterwards. Hilde owned Under Water Works for forty years, and sold it in 2015 to Gretchen Slack.</P>
+					<P>At Under Water Works, we are are passionate about making your diving experience as good as it can be! We love scuba diving, and are excited to share it with you. Whether you're interested in learning to dive, continuing your diving education, purchasing equipment, or are wanting information about dive travel, we would love to share any information we have with you!</P>
+					<P>We believe in an honest and straight forward approach to diving. Our PADI Instructors will teach you the information you need to be a safe, and independent diver. If you're looking to purchase equipment, we will strive to find what will work best for you, and the type of diving you love.</P>
+					<P>Come in, and meet our staff, and check out our shop!</P>
+					<div className="dFlex jcSpaceBetween varParagraphPadding">
 						<Card
 							title={<span>Gretchen <span className="fwBold">Slack</span></span>}
 							subtitle="Owner & Training Director"
 							img={gretchen}
-							content="I started diving in 2003, taking my Basic Open Water Diver training here at Under Water Works.  While not initially sold on the idea of Scuba Diving, by the time I took my first breath underwater, I was hooked, and have had some amazing experiences underwater since!  By far the majority of my diving has been in the Pacific Northwest, and even after visiting several warm water locations, it is still my favourite place to dive!  The life in the Pacific Northwest is amazingly beautiful and abundant, and I continue to have new and unique experiences, even at dive sites I've visited hundreds of times."
+							content="I started diving in 2003, taking my Basic Open Water Diver training here at Under Water Works. While not initially sold on the idea of Scuba Diving, by the time I took my first breath underwater, I was hooked, and have had some amazing experiences underwater since! By far the majority of my diving has been in the Pacific Northwest, and even after visiting several warm water locations, it is still my favourite place to dive! The life in the Pacific Northwest is amazingly beautiful and abundant, and I continue to have new and unique experiences, even at dive sites I've visited hundreds of times."
 						/>
 						<Card
 							title={<span>Dave <span className="fwBold">Ishmael</span></span>}
 							subtitle="Service Technician"
 							img={dave}
-							content="As a child I learned of Scuba Diving by watching Sea Hunt and Jacques Cousteau TV programs.  I decided as a boy I wanted to become a professional diver and explore the underwater world.  I became certified as a NAUI Scuba Diver in 1976 and worked my way up the NAUI ranks. In 1986 I became a PADI Instructor, and have also been a Certified Equipment Technician for over 30 years.  My diving has taken me to the Caribbean, Mexico, Hawaii, and Canada, although my favorite dives have been here in the Pacific Northwest."
+							content="As a child I learned of Scuba Diving by watching Sea Hunt and Jacques Cousteau TV programs. I decided as a boy I wanted to become a professional diver and explore the underwater world. I became certified as a NAUI Scuba Diver in 1976 and worked my way up the NAUI ranks. In 1986 I became a PADI Instructor, and have also been a Certified Equipment Technician for over 30 years. My diving has taken me to the Caribbean, Mexico, Hawaii, and Canada, although my favorite dives have been here in the Pacific Northwest."
 						/>
 						<Card
 							title={<span>Gretchen <span className="fwBold">Frye</span></span>}
