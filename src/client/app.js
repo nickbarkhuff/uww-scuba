@@ -166,7 +166,7 @@ const App = () => (
 		{/* Page Content */}
 		<Switch>
 			{[...pages]
-				.sort((a, b) => (a.priority || 0) < (b.priority || 0))
+				.sort((a, b) => (a.priority || 0) < (b.priority || 0) ? 1 : -1)
 				.map(page => (
 					<Route key={page.path} path={page.path}>
 						<Helmet><title>{page.name}</title></Helmet>
