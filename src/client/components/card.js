@@ -8,8 +8,8 @@ export const Card = (props) => {
             <img className="pbottom1 mwFull" src={props.img} alt="Card image"/>
             <div style={{
                 display: "-webkit-box",
-                webkitBoxOrient: "vertical",
-                webkitLineClamp: "8",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: "8",
                 overflow: "hidden"
             }}>
                 {props.content}

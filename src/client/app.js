@@ -78,6 +78,9 @@ const pages = [
 							content="From an early age I have enjoyed being in, on, and around water. As a result, I have participated in many water related activities: competitive swimming, water polo, lifeguard, Water Safety Instructor, freediver, scuba diver, scuba instructor, and boat captain. Soon after being certified as a PADI Open Water Diver, I found that I wasn't able to dive as often as I might like so I quickly took my continuing education classes of Enriched Air Nitrox, Advanced Open Water, and Rescue diver. I still wasn’t diving enough and that had me dreaming about the future and how to dive more often."
 						/>
 					</div>
+					<P className="taRight" noBottomPadding>
+						<Button to="/staff">See the rest</Button>
+					</P>
 				</Section>
 
 			</Fragment>
