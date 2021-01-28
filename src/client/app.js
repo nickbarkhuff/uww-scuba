@@ -8,6 +8,10 @@ import hours from "./assets/hours.png";
 import gretchen from "./assets/staff/gretchen-slack.png";
 import dave from "./assets/staff/dave-ishmael.png";
 import david from "./assets/staff/david-frye.png";
+import discover from "./assets/classes/discover-scuba.png";
+import open from "./assets/classes/open-water.jpeg";
+import divemaster from "./assets/classes/divemaster.jpeg";
+import sunset from "./assets/sunset.jpeg";
 
 const pages = [
 	{
@@ -48,26 +52,78 @@ const pages = [
 				{/* Learn to dive */}
 				<Section>
 					<P className="fs5" noTopPadding>Learn to dive with us!</P>
-					<P>
+					<P className="fs2">
 						When choosing a dive shop, the most important thing to consider is your instructors. SCUBA is a dangerous sport, so you'll need to learn the do's and don'ts under close supervision from people you can trust. At Under Water Works, <span className="fwBold">our top priority is safety</span>; you'll learn how to look out for yourself and others from instructors with years of experience under their belts.
 					</P>
-					<P className="" noBottomPadding>(classes)</P>
+
+					<P></P>
+
+					<div><div className="dInlineBlock fs4 bg4 c1" style={{padding: "1rem", marginBottom: "1rem"}}>Discover Scuba</div></div>
+					<div style={{width: "40%", display: "inline-block"}}>
+						<img src={discover} alt="Discover Scuba" style={{maxWidth: "90%"}}/>
+					</div>
+					<div style={{width: "60%", display: "inline-block", verticalAlign: "top"}}>
+						<P noTopPadding>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras ornare arcu dui vivamus arcu felis bibendum. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. Tellus at urna condimentum mattis pellentesque id. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Non tellus orci ac auctor augue mauris augue neque. Turpis egestas integer eget aliquet nibh praesent. Enim lobortis scelerisque fermentum dui. Et netus et malesuada fames ac turpis egestas sed. Turpis massa tincidunt dui ut ornare lectus sit. Leo duis ut diam quam nulla porttitor massa id neque. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Senectus et netus et malesuada fames ac turpis egestas sed. Auctor urna nunc id cursus metus aliquam eleifend. Neque ornare aenean euismod elementum nisi quis eleifend.</P>
+						<P>Id neque aliquam vestibulum morbi blandit cursus risus at. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Integer quis auctor elit sed vulputate mi sit amet mauris. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Netus et malesuada fames ac. Sed augue lacus viverra vitae congue eu consequat ac. Euismod in pellentesque massa placerat duis ultricies lacus sed. Arcu felis bibendum ut tristique. Velit euismod in pellentesque massa placerat. Eget est lorem ipsum dolor sit amet consectetur. Porta nibh venenatis cras sed felis eget velit. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Arcu non odio euismod lacinia at quis risus sed.</P>
+					</div>
+
+					<P></P>
+					<P></P>
+
+					<div style={{textAlign: "right"}}><div className="dInlineBlock fs4 bg4 c1" style={{padding: "1rem", marginBottom: "1rem"}}>Open Water</div></div>
+					<div style={{width: "60%", display: "inline-block", verticalAlign: "top"}}>
+						<P noTopPadding>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras ornare arcu dui vivamus arcu felis bibendum. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. Tellus at urna condimentum mattis pellentesque id. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Non tellus orci ac auctor augue mauris augue neque. Turpis egestas integer eget aliquet nibh praesent. Enim lobortis scelerisque fermentum dui. Et netus et malesuada fames ac turpis egestas sed. Turpis massa tincidunt dui ut ornare lectus sit. Leo duis ut diam quam nulla porttitor massa id neque. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Senectus et netus et malesuada fames ac turpis egestas sed. Auctor urna nunc id cursus metus aliquam eleifend. Neque ornare aenean euismod elementum nisi quis eleifend.</P>
+						<P>Id neque aliquam vestibulum morbi blandit cursus risus at. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Integer quis auctor elit sed vulputate mi sit amet mauris. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Netus et malesuada fames ac. Sed augue lacus viverra vitae congue eu consequat ac. Euismod in pellentesque massa placerat duis ultricies lacus sed. Arcu felis bibendum ut tristique. Velit euismod in pellentesque massa placerat. Eget est lorem ipsum dolor sit amet consectetur. Porta nibh venenatis cras sed felis eget velit. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Arcu non odio euismod lacinia at quis risus sed.</P>
+					</div>
+					<div style={{width: "40%", display: "inline-block", textAlign: "right"}}>
+						<img src={open} alt="Discover Scuba" style={{maxWidth: "90%"}}/>
+					</div>
+
+					<P></P>
+					<P></P>
+
+					<div><div className="dInlineBlock fs4 bg4 c1" style={{padding: "1rem", marginBottom: "1rem"}}>Divemaster</div></div>
+					<div style={{width: "40%", display: "inline-block"}}>
+						<img src={divemaster} alt="Discover Scuba" style={{maxWidth: "90%"}}/>
+					</div>
+					<div style={{width: "60%", display: "inline-block", verticalAlign: "top"}}>
+						<P noTopPadding>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed cras ornare arcu dui vivamus arcu felis bibendum. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. Tellus at urna condimentum mattis pellentesque id. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Non tellus orci ac auctor augue mauris augue neque. Turpis egestas integer eget aliquet nibh praesent. Enim lobortis scelerisque fermentum dui. Et netus et malesuada fames ac turpis egestas sed. Turpis massa tincidunt dui ut ornare lectus sit. Leo duis ut diam quam nulla porttitor massa id neque. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Senectus et netus et malesuada fames ac turpis egestas sed. Auctor urna nunc id cursus metus aliquam eleifend. Neque ornare aenean euismod elementum nisi quis eleifend.</P>
+						<P>Id neque aliquam vestibulum morbi blandit cursus risus at. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Integer quis auctor elit sed vulputate mi sit amet mauris. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Netus et malesuada fames ac. Sed augue lacus viverra vitae congue eu consequat ac. Euismod in pellentesque massa placerat duis ultricies lacus sed. Arcu felis bibendum ut tristique. Velit euismod in pellentesque massa placerat. Eget est lorem ipsum dolor sit amet consectetur. Porta nibh venenatis cras sed felis eget velit. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Arcu non odio euismod lacinia at quis risus sed.</P>
+					</div>
+
+					<P className="taRight" noBottomPadding>
+						<Button to="/classes">All our courses</Button>
+					</P>
 				</Section>
 
 				<Spacer/>
 
 				{/* Fun dive days */}
-				<Section bg="white" full>Fun dive days</Section>
+				<Section className="taCenter c1 fs2" bgImage={sunset} full>
+					<div className="bg3Light br1" style={{padding: "1rem"}}>
+						<P className="fs6">FUN DIVE DAYS!</P>
+						<P>We at Under Water Works love diving, and specifically love diving in the Pacific Northwest, but we understand that it can be challenging to plan and organize everything for a day of diving.  We're here to help! We're hosting a monthly Fun Dive Day, at different dive sites around the Pacific Northwest!  We will  handle logistics like dive site planning and briefing, emergency equipment, and help with things like proper weighting.</P>
+						<P>If you don't have a dive buddy, we will help to connect you to another diver up for the Fun Dive, or we will go out diving with you.  There is no charge for joining, all we ask is that you rent any equipment you need from Under Water Works, and that you tip your staff leaders, if you feel their service was deserving of it.  The dates, times and locations of the fun dives are below.</P>
+						<P>January 23rd / Location TBD / 10am - 2pm</P>
+						<P>February 27th / Location TBD / 10am - 2pm</P>
+						<P>March 20th / Location TBD / 10am - 2pm</P>
+						<P noBottomPadding>
+							<Button>Sign up</Button>
+						</P>
+					</div>
+				</Section>
 
 				<Spacer/>
 
 				{/* Our team */}
 				<Section>
 					<P className="fs5" noTopPadding>Our team</P>
-					<P>Under Water Works was opened in 1975, by Jerry and Hilde Rood. They first began by teaching classes at Tigard High School, and opened the retail shop shortly afterwards. Hilde owned Under Water Works for forty years, and sold it in 2015 to Gretchen Slack.</P>
-					<P>At Under Water Works, we are are passionate about making your diving experience as good as it can be! We love scuba diving, and are excited to share it with you. Whether you're interested in learning to dive, continuing your diving education, purchasing equipment, or are wanting information about dive travel, we would love to share any information we have with you!</P>
-					<P>We believe in an honest and straight forward approach to diving. Our PADI Instructors will teach you the information you need to be a safe, and independent diver. If you're looking to purchase equipment, we will strive to find what will work best for you, and the type of diving you love.</P>
-					<P>Come in, and meet our staff, and check out our shop!</P>
+					<div className="fs2">
+						<P>Under Water Works was opened in 1975, by Jerry and Hilde Rood. They first began by teaching classes at Tigard High School, and opened the retail shop shortly afterwards. Hilde owned Under Water Works for forty years, and sold it in 2015 to Gretchen Slack.</P>
+						<P>At Under Water Works, we are are passionate about making your diving experience as good as it can be! We love scuba diving, and are excited to share it with you. Whether you're interested in learning to dive, continuing your diving education, purchasing equipment, or are wanting information about dive travel, we would love to share any information we have with you!</P>
+						<P>We believe in an honest and straight forward approach to diving. Our PADI Instructors will teach you the information you need to be a safe, and independent diver. If you're looking to purchase equipment, we will strive to find what will work best for you, and the type of diving you love.</P>
+						<P>Come in, and meet our staff, and check out our shop!</P>
+					</div>
 					<div className="dFlex jcSpaceBetween varParagraphPadding">
 						<Card
 							title={<span>Gretchen <span className="fwBold">Slack</span></span>}
@@ -82,7 +138,7 @@ const pages = [
 							content="As a child I learned of Scuba Diving by watching Sea Hunt and Jacques Cousteau TV programs. I decided as a boy I wanted to become a professional diver and explore the underwater world. I became certified as a NAUI Scuba Diver in 1976 and worked my way up the NAUI ranks. In 1986 I became a PADI Instructor, and have also been a Certified Equipment Technician for over 30 years. My diving has taken me to the Caribbean, Mexico, Hawaii, and Canada, although my favorite dives have been here in the Pacific Northwest."
 						/>
 						<Card
-							title={<span>Gretchen <span className="fwBold">Frye</span></span>}
+							title={<span>David <span className="fwBold">Frye</span></span>}
 							subtitle="Master Scuba Diver"
 							img={david}
 							content="From an early age I have enjoyed being in, on, and around water. As a result, I have participated in many water related activities: competitive swimming, water polo, lifeguard, Water Safety Instructor, freediver, scuba diver, scuba instructor, and boat captain. Soon after being certified as a PADI Open Water Diver, I found that I wasn't able to dive as often as I might like so I quickly took my continuing education classes of Enriched Air Nitrox, Advanced Open Water, and Rescue diver. I still wasn’t diving enough and that had me dreaming about the future and how to dive more often."
