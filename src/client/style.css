@@ -1,77 +1,131 @@
+/* GLOBAL */
 *{box-sizing: border-box}
-p{margin: 0}
-button{border: 0}
 
-.varGutters{padding: 0 10rem}
-.varSectionPadding{padding: 2.5rem}
-.varSectionPaddingSlim{padding: 1rem}
-.varSectionSpacing{min-height: 3rem}
-.varParagraphPadding{padding: 1rem 0}
-.varParagraphReduced{width: 60%}
-.varParagraphReduced{margin: auto}
-.varLogoHeight{height: 3.5rem}
-.varJumbotronHeight{min-height: 650px}
-.varButton{padding: 1rem}
-.varButton:hover{box-shadow: 5px 10px 10px 0 black}
-.varButton:active{box-shadow: 5px 5px 10px 0 black}
-.varButton:hover{transform: translateY(-5px)}
-.varButton:active{transform: translateY(0)}
-.varCardPadding{padding: 2rem}
-
-@media only screen and (max-width: 1200px) {
-    .varGutters{padding: 0 2rem}
-    .varParagraphReduced{width: 80%}
+html, body, #root{
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
 }
 
-@media only screen and (max-width: 800px) {
-    .varParagraphReduced{width: 100%}
-    .varLogoHeight{height: 2rem}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font: inherit;
 }
 
-.c0{color: inherit}
-.c1{color: white}
-.c2{color: black}
-.bg1{background-color: #192a56}
-.bg2{background-color: white}
-.bg3{background-color: black}
-.bg3Light{background-color: rgba(0,0,0,0.75)}
-.bg4{background-color: #de3c4b}
-.bg5{background-color: #ECE8EA}
+p{
+    margin: 0;
+}
+
+
+
+/* VARIABLES */
+.xGutters{padding: 0 10%}
+.xSectionPadding{padding: 3rem}
+.xSectionPaddingSlim{padding: 1rem}
+.xSectionSpacing{min-height: 8rem}
+.xJumbotronHeight{min-height: 750px}
+.xLogoHeight{height: 4rem}
+
+.xNavLink{
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.xNavLinkWrapper{
+    display: inline-block;
+}
+.xNavLinkUnderline{
+    height: 5px;
+    background-color: red;
+    border-radius: 0.5rem;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+.xNavLinkWrapper:hover .xNavLinkUnderline, .xNavLinkUnderlineCurrent{
+    transform: scaleX(1);
+}
+
+.xLinkButton{
+    background-color: #de3c4b;
+    color: white;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.xLinkButton:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 10px 0 black;
+}
+.xLinkButton:active{
+    transform: translateY(0);
+    box-shadow: 5px 5px 10px 0 black;
+}
+
+
+
+/* PALETTE */
+.ff1{font-family: sans-serif}
+
 .fs1{font-size: 1rem}
 .fs2{font-size: 1.25rem}
 .fs3{font-size: 1.5rem}
 .fs4{font-size: 1.75rem}
 .fs5{font-size: 2rem}
 .fs6{font-size: 2.5rem}
-.flex1{flex: 1}
-.bs1{box-shadow: 0 0 25px 0 black}
-.br1{border-radius: 0.5rem}
-.ptopNone{padding-top: 0}
-.pbottomNone{padding-bottom: 0}
-.pbottom1{padding-bottom: 1rem}
 
-@media only screen and (max-width: 800px) {
-    .fs2{font-size: 1.2rem}
-    .fs3{font-size: 1.4rem}
-    .fs4{font-size: 1.6rem}
-    .fs5{font-size: 1.8rem}
-    .fs6{font-size: 2rem}
+.bg1{background-color: white}
+.bg2{background-color: black}
+.bg2Light{background-color: rgba(0,0,0,0.75)}
+.bg3{background-color: #000c2b}
+.bg4{background-color: #607bc1}
+.bg5{background-color: #de3c4b}
+
+.c1{color: white}
+.c2{color: black}
+
+.fwBold{font-weight: bold}
+
+.pLeftNone{padding-left: 0}
+.pRightNone{padding-right: 0}
+.pBottom1{padding-bottom: 1.5rem}
+.pRight1{padding-right: 1.5rem}
+
+.br1{border-radius: 0.5rem}
+
+.bs1{box-shadow: 0 0 1rem 0.1rem black}
+
+.w1{width: 75%}
+
+.mwFull{max-width: 100%}
+
+.mhFull{min-height: 100%}
+
+.dInlineBlock{display: inline-block}
+.dFlex{display: flex}
+
+.fdColumn{flex-direction: column}
+
+.flex1{flex: 1}
+
+.mAuto{margin: auto}
+
+.aiCenter{align-items: center}
+
+.taCenter{text-align: center}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px){
+
 }
 
-.hFull{height: 100%}
-.mNone{margin: 0}
-.ofAuto{overflow: auto}
-.ffSansSerif{font-family: sans-serif}
-.dFlex{display: flex}
-.dInlineBlock{display: inline-block}
-.fdColumn{flex-direction: column}
-.aiCenter{align-items: center}
-.tdNone{text-decoration: none}
-.fwBold{font-weight: bold}
-.taCenter{text-align: center}
-.taRight{text-align: right}
-.bNone{border: 0}
-.cursorPointer{cursor: pointer}
-.mwFull{max-width: 100%}
-.fstyleItalic{font-style: italic}
-.jcSpaceBetween{justify-content: space-between}
+@media only screen and (max-width: 900px){
+
+}
+
+@media only screen and (max-width: 600px){
+
+}

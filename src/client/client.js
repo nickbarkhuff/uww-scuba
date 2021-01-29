@@ -1,19 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import {Helmet} from "react-helmet";
+
 import favicon from "./assets/favicon.png";
-import App from "./app.js";
+import {App} from "./components/components.js";
 import "./style.css";
 
 ReactDOM.render(
 	(
-		<Router>
+		<BrowserRouter>
 			<Helmet titleTemplate="UWW | %s">
 				<link rel="icon" href={favicon}/>
 			</Helmet>
 			<App/>
-		</Router>
+		</BrowserRouter>
 	),
 	document.getElementById("root")
 );

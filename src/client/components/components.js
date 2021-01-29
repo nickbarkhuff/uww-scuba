@@ -1,8 +1,6 @@
-import {Section} from "./section.js";
-import {Spacer} from "./spacer.js";
-import {Wrapper} from "./wrapper.js";
-import {Button} from "./button.js";
-import {P} from "./paragraph.js";
-import {Card} from "./card.js";
+import {App} from "./App.js";
+import {Wrapper} from "./Wrapper.js";
+import {Section} from "./Section.js";
+import {Spacer} from "./Spacer.js";
 
-export {Section, Spacer, Wrapper, Button, P, Card};
+export {App, Wrapper, Section, Spacer};
