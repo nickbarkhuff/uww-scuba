@@ -9,30 +9,33 @@ import logo from "../assets/logo.png";
 export const App = () => (
     <Wrapper>
         <Section outerClassName="bg1" innerClassName="xSectionPaddingSlim c2 pLeftNone pRightNone">
-            <header className="dFlex aiCenter">
+            <header className="dFlex aiCenter fs2">
                 <div className="flex1">
                     <Link to="/">
                         <img src={logo} alt="Logo" className="xLogoHeight"/>
                     </Link>
                 </div>
-                <nav className="fs2">
+                <nav className="xDisplayBigNav">
                     {pages.map((page, i) => (
                         <div
                             key={page.path}
                             className={
-                                "xNavLinkWrapper "
+                                "dInlineBlock transformScaleX1Hover "
                                 + (i + 1 < pages.length ? "pRight1 " : "")
                             }
                         >
-                            <Link to={page.path} className="xNavLink">
+                            <Link to={page.path} className="dInlineBlock xNavUnderlineSpacing">
                                 {page.name}
                             </Link>
                             <div className={
-                                "xNavLinkUnderline "
-                                + (useLocation().pathname === page.path ? "xNavLinkUnderlineCurrent " : "")
+                                "xNavUnderlineHeight xNavUnderlineTransition bg5 br1 transformScaleX0 transformScaleX1Trigger "
+                                + (useLocation().pathname === page.path ? "transformScaleX1 " : "")
                             }/>
                         </div>
                     ))}
+                </nav>
+                <nav className="xDisplaySmallNav">
+                    Small Nav
                 </nav>
             </header>
         </Section>
