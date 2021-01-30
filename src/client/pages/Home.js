@@ -10,8 +10,11 @@ export const Home = () => (
             <div className="xSectionPadding dInlineBlock bg2Light br1 taCenter">
                 <h1 className="fs6 fwBold pBottom1">Your diving adventure starts here</h1>
                 <h2 className="fs2 pBottom1">Explore a whole new world; right here in the gorgeous Pacific Northwest!</h2>
-                <Button to="/classes" wide>
+                <Button to="/classes" className="mRight1" wide>
                     Take a class
+                </Button>
+                <Button to="/equipment" wide>
+                    Browse our inventory
                 </Button>
             </div>
         </Section>

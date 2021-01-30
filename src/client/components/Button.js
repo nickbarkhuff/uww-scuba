@@ -8,7 +8,8 @@ export const Button = (props) => (
             "bg5 c1 dInlineBlock br1 fs2 "
             + "bsButtonUp_hover bsButtonDown_active transitionTransformButton "
             + "transformTranslateYButton_hover transformTranslateYReset_active transitionTransformReset_active "
-            + (props.wide ? "pButtonWide" : "pButton")
+            + (props.wide ? "pButtonWide " : "pButton ")
+            + (props.className || "")
         }
     >
         {props.children}
