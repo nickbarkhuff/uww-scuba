@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 .xGutters{padding: 0 10%}
 .xLogoHeight{height: 4rem}
 .xJumbotronHeight{min-height: 750px}
+.xReducedSection{width: 75%}
 
 .xSectionPadding{padding: 3rem}
 .xSectionPaddingSlim{padding: 1rem}
@@ -86,7 +87,6 @@ h1, h2, h3, h4, h5, h6, p, a{
 .bs1{box-shadow: 0 0 1rem 0.1rem black}
 
 .wFull{width: 100%}
-.wReduced{width: 75%}
 
 .mwFull{max-width: 100%}
 

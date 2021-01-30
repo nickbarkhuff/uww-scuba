@@ -37,7 +37,7 @@ export const Home = () => (
 
         <Section innerClassName="taCenter">
             <h3 className="fs6 fwBold pBottom1">Welcome to UWW!</h3>
-            <div className="wReduced mAuto">
+            <div className="xReducedSection mAuto">
                 <YouTubeEmbed className="pBottom1" src="https://www.youtube.com/embed/Io1OF2OkTWY"/>
                 <p>
                     (This is just a placeholder, of course. A video about 1 or 2 minutes long introducing your shop will put a human face on your business, and let potential customers see the store without having to actually come in. This is especially important because of covid. The better the quality of the video, the more trustworthy your brand will be.)
