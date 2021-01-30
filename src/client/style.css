@@ -67,18 +67,30 @@ h1, h2, h3, h4, h5, h6, p, a{
 .pRightNone{padding-right: 0}
 .pBottom1{padding-bottom: 1.5rem}
 .pRight1{padding-right: 1.5rem}
+.pIframe{padding-bottom: 56.25%}
 
 .mRight1{margin-right: 1.5rem}
+
+.posRelative{position: relative}
+.posAbsolute{position: absolute}
+
+.top0{top: 0}
+
+.left0{left: 0}
 
 .br1{border-radius: 0.5rem}
 
 .bs1{box-shadow: 0 0 1rem 0.1rem black}
 
-.w1{width: 75%}
+.wFull{width: 100%}
+.wReduced{width: 75%}
 
 .mwFull{max-width: 100%}
 
 .mhFull{min-height: 100%}
+
+.hNone{height: 0}
+.hFull{height: 100%}
 
 .transformScaleX0{transform: scaleX(0)}
 .transformScaleX1Hover:hover .transformScaleX1Trigger, .transformScaleX1{transform: scaleX(1)}
@@ -102,17 +114,11 @@ h1, h2, h3, h4, h5, h6, p, a{
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 1200px){
-    .xGutters{padding: 0 5%}
-    .xLogoHeight{height: 3rem}
-}
+@media only screen and (max-width: 1200px){}
 
 @media only screen and (max-width: 900px){
-    .xGutters{padding: 0 2%}
     .xDisplayBigNav{display: none}
     .xDisplaySmallNav{display: initial}
 }
 
-@media only screen and (max-width: 600px){
-    .xLogoHeight{height: 2rem}
-}
+@media only screen and (max-width: 600px){}
