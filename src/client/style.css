@@ -20,7 +20,7 @@ h1, h2, h3, p, a{
 .xGutters{padding: 0 10%}
 .xLogoHeight{height: 4rem}
 .xJumbotronHeight{min-height: 750px}
-.xReducedSection{width: 75%}
+.xReducedWidth{width: 75%}
 
 .xSectionPadding{padding: 3rem}
 .xSectionPaddingSlim{padding: 1rem}
