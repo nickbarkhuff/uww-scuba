@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6, p, a{
 .xCtaButtonDirection{flex-direction: row}
 
 .pButton{padding: 1rem}
-.pButtonWide{padding: 1rem 3rem}
 .bsButtonUp_hover:hover{box-shadow: 5px 10px 10px 0 black}
 .bsButtonDown_active:active{box-shadow: 5px 5px 10px 0 black}
 .transformTranslateYButton_hover:hover{transform: translateY(-5px)}

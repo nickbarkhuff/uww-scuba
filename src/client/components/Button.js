@@ -5,10 +5,9 @@ export const Button = (props) => (
     <Link
         to={props.to}
         className={
-            "bg5 c1 dInlineBlock br1 fs2 "
+            "bg5 c1 dInlineBlock br1 fs2 pButton "
             + "bsButtonUp_hover bsButtonDown_active transitionTransformButton "
             + "transformTranslateYButton_hover transformTranslateYReset_active transitionTransformReset_active "
-            + (props.wide ? "pButtonWide " : "pButton ")
             + (props.className || "")
         }
     >
