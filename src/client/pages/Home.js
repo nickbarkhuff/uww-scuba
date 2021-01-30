@@ -25,8 +25,8 @@ export const Home = () => (
 
         <Section innerClassName="bg1 c2 xSectionPadding br1 bs1 taCenter">
             <h3 className="fs5 fwBold pBottom1">Hours</h3>
-            <p className="fs2 wReduced mAuto pBottom1">
-                We have returned to regular hours, although shorter than they used to be! No appointments are necessary, but please remember to bring your facemask with you, as they are required to enter the store. Thank you for supporting your local dive shop! We appreciate you more than you know!
+            <p className="fs2 pBottom1">
+                Remember: facemasks are <span className="fwBold">required</span> to enter the store.
             </p>
             <img src={hours} alt="Hours" className="mwFull"/>
         </Section>
@@ -35,10 +35,19 @@ export const Home = () => (
 
         <Section innerClassName="taCenter">
             <h3 className="fs6 fwBold pBottom1">Welcome to UWW!</h3>
-            <YouTubeEmbed className="wReduced mAuto pBottom1" src="https://www.youtube.com/embed/Io1OF2OkTWY"/>
-            <p className="wReduced mAuto">
-                (This is just a placeholder, of course. A video about 1 or 2 minutes long introducing your shop will put a human face on your business, and let potential customers see the store without having to actually come in. This is especially important because of covid. The better the quality of the video, the more trustworthy your brand will be.)
-            </p>
+            <div className="wReduced mAuto">
+                <YouTubeEmbed className="pBottom1" src="https://www.youtube.com/embed/Io1OF2OkTWY"/>
+                <p>
+                    (This is just a placeholder, of course. A video about 1 or 2 minutes long introducing your shop will put a human face on your business, and let potential customers see the store without having to actually come in. This is especially important because of covid. The better the quality of the video, the more trustworthy your brand will be.)
+                </p>
+            </div>
+        </Section>
+
+        <Spacer/>
+
+        <Section outerClassName="bg1" innerClassName="c2 xSectionPadding pLeftNone pRightNone">
+            <h3 className="fs5 pBottom1 fwBold">What's new?</h3>
+            <p>Blog posts, YouTube videos, new inventory items, classes starting soon, upcoming Fun Dive Days</p>
         </Section>
     </Fragment>
 );
