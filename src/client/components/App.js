@@ -15,7 +15,7 @@ export const App = () => (
                         <img src={logo} alt="Logo" className="xLogoHeight"/>
                     </Link>
                 </div>
-                <nav className="xDisplayBigNav">
+                <nav>
                     {pages.map((page, i) => (
                         <Link
                             key={page.path}
@@ -34,9 +34,6 @@ export const App = () => (
                             }/>
                         </Link>
                     ))}
-                </nav>
-                <nav className="xDisplaySmallNav">
-                    Small Nav
                 </nav>
             </header>
         </Section>
