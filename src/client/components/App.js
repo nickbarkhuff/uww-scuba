@@ -17,21 +17,22 @@ export const App = () => (
                 </div>
                 <nav className="xDisplayBigNav">
                     {pages.map((page, i) => (
-                        <div
+                        <Link
                             key={page.path}
+                            to={page.path}
                             className={
                                 "dInlineBlock transformScaleX1Hover "
-                                + (i + 1 < pages.length ? "pRight1 " : "")
+                                + (i + 1 < pages.length ? "mRight1" : "")
                             }
                         >
-                            <Link to={page.path} className="dInlineBlock xNavUnderlineSpacing">
+                            <div  className="xNavUnderlineSpacing">
                                 {page.name}
-                            </Link>
+                            </div>
                             <div className={
                                 "xNavUnderlineHeight xNavUnderlineTransition bg5 br1 transformScaleX0 transformScaleX1Trigger "
-                                + (useLocation().pathname === page.path ? "transformScaleX1 " : "")
+                                + (useLocation().pathname === page.path ? "transformScaleX1" : "")
                             }/>
-                        </div>
+                        </Link>
                     ))}
                 </nav>
                 <nav className="xDisplaySmallNav">
