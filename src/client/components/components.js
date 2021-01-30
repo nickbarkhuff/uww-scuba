@@ -1,6 +1,7 @@
 import {App} from "./App.js";
-import {Wrapper} from "./Wrapper.js";
+import {Button} from "./Button.js";
 import {Section} from "./Section.js";
 import {Spacer} from "./Spacer.js";
+import {Wrapper} from "./Wrapper.js";
 
-export {App, Wrapper, Section, Spacer};
+export {App, Button, Section, Spacer, Wrapper};

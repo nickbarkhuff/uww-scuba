@@ -1,7 +1,6 @@
 import React, {Fragment} from "react";
-import {Link} from "react-router-dom";
 
-import {Section, Spacer} from "../components/components.js";
+import {Section, Spacer, Button} from "../components/components.js";
 import diver from "../assets/diver.jpeg";
 import hours from "../assets/hours.png";
 
@@ -11,9 +10,9 @@ export const Home = () => (
             <div className="xSectionPadding dInlineBlock bg2Light br1 taCenter">
                 <h1 className="fs6 fwBold pBottom1">Your diving adventure starts here</h1>
                 <h2 className="fs2 pBottom1">Explore a whole new world; right here in the gorgeous Pacific Northwest!</h2>
-                <Link to="/classes" className="xLinkButton">
+                <Button to="/classes" wide>
                     Take a class
-                </Link>
+                </Button>
             </div>
         </Section>
 

@@ -32,22 +32,12 @@ h1, h2, h3, h4, h5, h6, p, a{
 .xNavUnderlineSpacing{padding-bottom: 5px}
 .xNavUnderlineTransition{transition: transform .15s ease}
 
-.xLinkButton{
-    background-color: #de3c4b;
-    color: white;
-    padding: 1rem 3rem;
-    display: inline-block;
-    border-radius: 0.5rem;
-    text-decoration: none;
-}
-.xLinkButton:hover{
-    transform: translateY(-5px);
-    box-shadow: 5px 10px 10px 0 black;
-}
-.xLinkButton:active{
-    transform: translateY(0);
-    box-shadow: 5px 5px 10px 0 black;
-}
+.pButton{padding: 1rem}
+.pButtonWide{padding: 1rem 3rem}
+.bsButtonUp_hover:hover{box-shadow: 5px 10px 10px 0 black}
+.bsButtonDown_active:active{box-shadow: 5px 5px 10px 0 black}
+.transformTranslateYButton_hover:hover{transform: translateY(-5px)}
+.transitionTransformButton{transition: transform .1s ease}
 
 
 
@@ -90,6 +80,9 @@ h1, h2, h3, h4, h5, h6, p, a{
 
 .transformScaleX0{transform: scaleX(0)}
 .transformScaleX1Hover:hover .transformScaleX1Trigger, .transformScaleX1{transform: scaleX(1)}
+
+.transitionTransformReset_active:active{transition: transform 0s}
+.transformTranslateYReset_active:active{transform: translateY(0)}
 
 .dInlineBlock{display: inline-block}
 .dFlex{display: flex}
