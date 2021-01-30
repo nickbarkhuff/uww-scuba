@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6, p, a{
 .xNavUnderlineSpacing{padding-bottom: 5px}
 .xNavUnderlineTransition{transition: transform .15s ease}
 
+.xCtaButtonGap{margin: 25px}
+.xCtaButtonGapNegative{margin: -25px}
+.xCtaButtonDirection{flex-direction: row}
+
 .pButton{padding: 1rem}
 .pButtonWide{padding: 1rem 3rem}
 .bsButtonUp_hover:hover{box-shadow: 5px 10px 10px 0 black}
@@ -116,9 +120,6 @@ h1, h2, h3, h4, h5, h6, p, a{
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1200px){}
 
-@media only screen and (max-width: 900px){
-    .xDisplayBigNav{display: none}
-    .xDisplaySmallNav{display: initial}
-}
+@media only screen and (max-width: 900px){}
 
 @media only screen and (max-width: 600px){}

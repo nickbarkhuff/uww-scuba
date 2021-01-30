@@ -12,12 +12,14 @@ export const Home = () => (
                 <h2 className="fs2 pBottom1">
                     Explore a whole new world; right here in the gorgeous Pacific Northwest!
                 </h2>
-                <Button to="/classes" className="mRight1" wide>
-                    Take a class
-                </Button>
-                <Button to="/equipment" wide>
-                    Browse our inventory
-                </Button>
+                <div className="dFlex xCtaButtonGapNegative xCtaButtonDirection">
+                    <Button to="/classes" className="flex1 xCtaButtonGap">
+                        Take a class
+                    </Button>
+                    <Button to="/equipment" className="flex1 xCtaButtonGap">
+                        Browse our inventory
+                    </Button>
+                </div>
             </div>
         </Section>
 
