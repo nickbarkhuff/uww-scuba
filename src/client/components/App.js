@@ -21,15 +21,16 @@ export const App = () => (
                             key={page.path}
                             to={page.path}
                             className={
-                                "dInlineBlock transformScaleX1Hover "
+                                "dInlineBlock xNavLine "
                                 + (i + 1 < pages.length ? "mRight1" : "")
                             }
                         >
-                            <div  className="xNavUnderlineSpacing">
+                            <div  className="xNavLineSpacing">
                                 {page.name}
                             </div>
                             <div className={
-                                "xNavUnderlineHeight xNavUnderlineTransition bg5 br1 transformScaleX0 transformScaleX1Trigger "
+                                "bg5 br1 "
+                                + "xNavLineHeight xNavLineTransition xNavLineTransform xNavLineTransform_hover "
                                 + (useLocation().pathname === page.path ? "transformScaleX1" : "")
                             }/>
                         </Link>

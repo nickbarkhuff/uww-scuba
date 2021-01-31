@@ -26,13 +26,15 @@ h1, h2, h3, p, a{
 .xSectionPaddingSlim{padding: 1rem}
 .xSectionSpacing{min-height: 8rem}
 
-.xNavUnderlineHeight{height: 5px}
-.xNavUnderlineSpacing{padding-bottom: 5px}
-.xNavUnderlineTransition{transition: transform .15s ease}
-
 .xCtaButtonGap{margin: 25px}
 .xCtaButtonGapNegative{margin: -25px}
 .xCtaButtonDirection{flex-direction: row}
+
+.xNavLineHeight{height: 5px}
+.xNavLineSpacing{padding-bottom: 5px}
+.xNavLineTransition{transition: transform .15s ease}
+.xNavLineTransform{transform: scaleX(0)}
+.xNavLine:hover .xNavLineTransform_hover{transform: scaleX(1)}
 
 .xButtonPadding{padding: 1rem}
 .xButtonTransition{transition: transform .1s ease}
@@ -94,14 +96,13 @@ h1, h2, h3, p, a{
 .hNone{height: 0}
 .hFull{height: 100%}
 
-.transformScaleX0{transform: scaleX(0)}
-.transformScaleX1Hover:hover .transformScaleX1Trigger, .transformScaleX1{transform: scaleX(1)}
-
 .dBlock{display: block}
 .dInlineBlock{display: inline-block}
 .dFlex{display: flex}
 
 .fdColumn{flex-direction: column}
+
+.transformScaleX1{transform: scaleX(1)}
 
 .flex1{flex: 1}
 
