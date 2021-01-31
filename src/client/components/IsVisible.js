@@ -5,12 +5,15 @@ export const IsVisible = (props) => {
     const domRef = React.useRef();
 
     React.useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting)
-                    setVisible(true);
-            });
-        });
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting)
+                        setVisible(true);
+                });
+            },
+            {threshold: 0.25}
+        );
         observer.observe(domRef.current);
         return () => observer.unobserve(domRef.current);
     }, []);
