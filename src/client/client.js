@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import favicon from "./assets/favicon.png";
-import {App} from "./components/components.js";
+import {App} from "./components/App.js";
 import "./style.css";
 
 ReactDOM.render(
