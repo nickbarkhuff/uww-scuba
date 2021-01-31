@@ -2,8 +2,7 @@ import React from "react";
 
 export const Spacer = (props) => (
     <div className={
-        "xSectionSpacing "
-        + (props.push ? "flex1 " : "")
+        (props.push ? "flex1" : "xSectionSpacing")
     }>
         {props.children}
     </div>

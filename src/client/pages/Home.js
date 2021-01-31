@@ -4,7 +4,7 @@ import {Section, Spacer, Button, YouTubeEmbed, IsVisible} from "../components/co
 import {database} from "../database.js";
 import diver from "../assets/diver.jpeg";
 import hours from "../assets/hours.png";
-import sunset from "../assets/sunset.jpeg";
+import equipment from "../assets/equipment.jpeg";
 
 export const Home = () => (
     <Fragment>
@@ -73,7 +73,7 @@ export const Home = () => (
 
         <Section>
             <h3 className="fs5 pBottom1 fwBold">Learn to dive with us!</h3>
-            <p className="fs2 pBottom2">
+            <p className="fs2 pBottom2 taJustify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis. Tellus integer feugiat scelerisque varius morbi enim nunc. Fringilla est ullamcorper eget nulla facilisi. Mus mauris vitae ultricies leo integer malesuada nunc. Et malesuada fames ac turpis egestas sed. Arcu dictum varius duis at. Diam quis enim lobortis scelerisque fermentum dui. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus.
             </p>
             <div className="pBottom2">
@@ -98,9 +98,63 @@ export const Home = () => (
 
         <Spacer/>
 
-        <Section bgImage={sunset} outerClassName="bgSizeCover bgPositionCenter">
-            <div style={{minHeight: "500px"}}>
-                foobar
+        <Section
+            bgImage={equipment}
+            outerClassName="bgSizeCover bgPositionCenter"
+            innerClassName="xSectionPadding taCenter"
+        >
+            <h3 className="fs6 fwBold pBottom1">Is your equipment in good hands?</h3>
+            <p className="fs3 pBottom1">Our technician has 35+ years experience.</p>
+            <Button to="/equipment">Maintenance</Button>
+        </Section>
+
+        <Spacer/>
+
+        <Section>
+            <h3 className="fs5 fwBold pBottom1">Our team</h3>
+            <p className="pBottom1 fs2 taJustify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis. Tellus integer feugiat scelerisque varius morbi enim nunc. Fringilla est ullamcorper eget nulla facilisi. Mus mauris vitae ultricies leo integer malesuada nunc. Et malesuada fames ac turpis egestas sed. Arcu dictum varius duis at. Diam quis enim lobortis scelerisque fermentum dui. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus.
+            </p>
+            <div className="pBottom1">
+                CARDS
+            </div>
+            <div className="taRight">
+                <Button to="/staff">Everyone else</Button>
+            </div>
+        </Section>
+
+        <Spacer/>
+
+        <Section
+            outerClassName="bg5"
+            innerClassName="xSectionPadding pLeftNone pRightNone dFlex aiCenter"
+        >
+            <div>
+                <h3 className="fs6 fwBold">Contact us</h3>
+            </div>
+            <div className="flex1 dFlex jcCenter">
+                <div>
+                    <input type="text" placeholder="Name"/>
+                    <br/>
+                    <input type="text" placeholder="Email"/>
+                    <br/>
+                    <span className="pRight1">
+                        <input type="radio" name="contact" id="fdd"/>
+                        <label htmlFor="fdd">Fun Dive Days</label>
+                    </span>
+                    <span className="pRight1">
+                        <input type="radio" name="contact" id="classes"/>
+                        <label htmlFor="classes">Classes</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="contact" id="equipment"/>
+                        <label htmlFor="equipment">Equipment</label>
+                    </span>
+                    <br/>
+                    <textarea name="" id="" cols="100" rows="10" placeholder="Message"></textarea>
+                    <br/>
+                    <button>Submit</button>
+                </div>
             </div>
         </Section>
     </Fragment>
