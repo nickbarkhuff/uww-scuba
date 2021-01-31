@@ -105,7 +105,7 @@ export const Home = () => (
         >
             <h3 className="fs6 fwBold pBottom1">Is your equipment in good hands?</h3>
             <p className="fs3 pBottom1">Our technician has 35+ years experience.</p>
-            <Button to="/equipment">Maintenance</Button>
+            <Button to="/equipment">Maintenance info</Button>
         </Section>
 
         <Spacer/>
