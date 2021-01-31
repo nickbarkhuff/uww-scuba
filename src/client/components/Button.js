@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export const Button = (props) => (
     <div
         className={
-            "xButton "
+            "xButton dInlineBlock "
             + (props.className || "")
         }
     >
