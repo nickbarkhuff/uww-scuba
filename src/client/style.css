@@ -133,6 +133,9 @@ h1, h2, h3, h4, p, a{
 .taCenter{text-align: center}
 .taRight{text-align: right}
 
+.bgSizeCover{background-size: cover}
+.bgPositionCenter{background-position: center}
+
 
 
 /* MEDIA QUERIES */

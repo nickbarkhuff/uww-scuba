@@ -13,7 +13,7 @@ export const Section = (props) => {
                 }
                 style={
                     props.bgImage ? {
-                        backgroundImage: `url(${props.bgImage})`,
+                        backgroundImage: `url(${props.bgImage})`
                     } : {}
                 }
                 ref={domRef}

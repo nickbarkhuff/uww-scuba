@@ -4,10 +4,16 @@ import {Section, Spacer, Button, YouTubeEmbed, IsVisible} from "../components/co
 import {database} from "../database.js";
 import diver from "../assets/diver.jpeg";
 import hours from "../assets/hours.png";
+import sunset from "../assets/sunset.jpeg";
 
 export const Home = () => (
     <Fragment>
-        <Section bgImage={diver} innerClassName="xJumbotronHeight xSectionPadding pLeftNone pRightNone" noFade>
+        <Section
+            bgImage={diver}
+            outerClassName="bgSizeCover"
+            innerClassName="xJumbotronHeight xSectionPadding pLeftNone pRightNone"
+            noFade
+        >
             <IsVisible render={(isVisible, domRef) => (
                 <div
                     className={
@@ -87,6 +93,14 @@ export const Home = () => (
             </div>
             <div className="taRight">
                 <Button to="/classes">See all classes</Button>
+            </div>
+        </Section>
+
+        <Spacer/>
+
+        <Section bgImage={sunset} outerClassName="bgSizeCover bgPositionCenter">
+            <div style={{minHeight: "500px"}}>
+                foobar
             </div>
         </Section>
     </Fragment>
