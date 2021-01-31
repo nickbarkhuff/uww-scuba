@@ -35,10 +35,12 @@ h1, h2, h3, p, a{
 .xCtaButtonDirection{flex-direction: row}
 
 .xButtonPadding{padding: 1rem}
-.xButtonShadow_hover:hover{box-shadow: 5px 10px 10px 0 black}
-.xButtonShadow_active:active{box-shadow: 5px 5px 10px 0 black}
-.xButtonTransform_hover:hover{transform: translateY(-5px)}
 .xButtonTransition{transition: transform .1s ease}
+.xButton:hover .xButtonShadow_hover{box-shadow: 5px 10px 10px 0 black}
+.xButton:hover .xButtonTransform_hover{transform: translateY(-5px)}
+.xButton .xButtonShadow_active:active{box-shadow: 5px 5px 10px 0 black}
+.xButton .xButtonTransform_active:active{transform: translateY(0)}
+.xButton .xButtonTransition_active:active{transition: transform 0s}
 
 
 
@@ -95,9 +97,7 @@ h1, h2, h3, p, a{
 .transformScaleX0{transform: scaleX(0)}
 .transformScaleX1Hover:hover .transformScaleX1Trigger, .transformScaleX1{transform: scaleX(1)}
 
-.transitionTransformReset_active:active{transition: transform 0s}
-.transformTranslateYReset_active:active{transform: translateY(0)}
-
+.dBlock{display: block}
 .dInlineBlock{display: inline-block}
 .dFlex{display: flex}
 
