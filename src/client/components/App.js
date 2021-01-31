@@ -8,7 +8,7 @@ import logo from "../assets/logo.png";
 
 export const App = () => (
     <Wrapper>
-        <Section outerClassName="bg1" innerClassName="xSectionPaddingSlim c2 pLeftNone pRightNone">
+        <Section outerClassName="bg1" innerClassName="xSectionPaddingSlim c2 pLeftNone pRightNone" noFade>
             <header className="dFlex aiCenter fs2">
                 <div className="flex1">
                     <Link to="/">
@@ -50,7 +50,7 @@ export const App = () => (
 
         <Spacer push/>
 
-        <Section outerClassName="bg2" innerClassName="xSectionPadding">
+        <Section outerClassName="bg2" innerClassName="xSectionPadding" noFade>
             <footer className="fs2 taCenter fwBold">
                 © {new Date().getFullYear()} Under Water Works
             </footer>

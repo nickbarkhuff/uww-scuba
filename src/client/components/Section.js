@@ -1,25 +1,31 @@
 import React from "react";
+import {IsVisible} from "./components.js";
 
 export const Section = (props) => {
     return (
-        <div
-            className={
-                "xGutters "
-                + (props.outerClassName || "")
-            }
-            style={
-                props.bgImage ? {
-                    backgroundImage: `url(${props.bgImage})`,
-                } : {}
-            }
-        >
-            <section
+        <IsVisible render={(isVisible, domRef) => (
+            <div
                 className={
-                    (props.innerClassName || "")
+                    "xGutters "
+                    + (!props.noFade ? "xFadeIn " : "")
+                    + (!props.noFade && isVisible ? "xFadeInTrigger " : "")
+                    + (props.outerClassName || "")
                 }
+                style={
+                    props.bgImage ? {
+                        backgroundImage: `url(${props.bgImage})`,
+                    } : {}
+                }
+                ref={domRef}
             >
-                {props.children}
-            </section>
-        </div>
+                <section
+                    className={
+                        (props.innerClassName || "")
+                    }
+                >
+                    {props.children}
+                </section>
+            </div>
+        )}/>
     );
 };

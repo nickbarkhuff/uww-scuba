@@ -32,17 +32,27 @@ h1, h2, h3, p, a{
 
 .xNavLineHeight{height: 5px}
 .xNavLineSpacing{padding-bottom: 5px}
-.xNavLineTransition{transition: transform .15s ease}
+.xNavLineTransition{transition: transform .15s}
 .xNavLineTransform{transform: scaleX(0)}
 .xNavLine:hover .xNavLineTransform_hover{transform: scaleX(1)}
 
 .xButtonPadding{padding: 1rem}
-.xButtonTransition{transition: transform .1s ease}
+.xButtonTransition{transition: transform .15s}
 .xButton:hover .xButtonShadow_hover{box-shadow: 5px 10px 10px 0 black}
 .xButton:hover .xButtonTransform_hover{transform: translateY(-5px)}
 .xButton .xButtonShadow_active:active{box-shadow: 5px 5px 10px 0 black}
 .xButton .xButtonTransform_active:active{transform: translateY(0)}
 .xButton .xButtonTransition_active:active{transition: transform 0s}
+
+.xFadeIn{
+    opacity: 0;
+    transform: translateY(15vh);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.xFadeInTrigger{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 

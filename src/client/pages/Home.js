@@ -1,26 +1,34 @@
 import React, {Fragment} from "react";
 
-import {Section, Spacer, Button, YouTubeEmbed} from "../components/components.js";
+import {Section, Spacer, Button, YouTubeEmbed, IsVisible} from "../components/components.js";
 import diver from "../assets/diver.jpeg";
 import hours from "../assets/hours.png";
 
 export const Home = () => (
     <Fragment>
-        <Section bgImage={diver} innerClassName="xJumbotronHeight xSectionPadding pLeftNone pRightNone">
-            <div className="xSectionPadding dInlineBlock bg2Light br1 taCenter">
-                <h1 className="fs6 fwBold pBottom1">Your diving adventure starts here</h1>
-                <h2 className="fs2 pBottom1">
-                    Explore a whole new world; right here in the gorgeous Pacific Northwest!
-                </h2>
-                <div className="dFlex xCtaButtonGapNegative xCtaButtonDirection">
-                    <Button to="/classes" className="flex1 xCtaButtonGap">
-                        Take a class
-                    </Button>
-                    <Button to="/equipment" className="flex1 xCtaButtonGap">
-                        Browse our inventory
-                    </Button>
+        <Section bgImage={diver} innerClassName="xJumbotronHeight xSectionPadding pLeftNone pRightNone" noFade>
+            <IsVisible render={(isVisible, domRef) => (
+                <div
+                    className={
+                        "xSectionPadding dInlineBlock bg2Light br1 taCenter xFadeIn "
+                        + (isVisible ? "xFadeInTrigger" : "")
+                    }
+                    ref={domRef}
+                >
+                    <h1 className="fs6 fwBold pBottom1">Your diving adventure starts here</h1>
+                    <h2 className="fs2 pBottom1">
+                        Explore a whole new world; right here in the gorgeous Pacific Northwest!
+                    </h2>
+                    <div className="dFlex xCtaButtonGapNegative xCtaButtonDirection">
+                        <Button to="/classes" className="flex1 xCtaButtonGap">
+                            Take a class
+                        </Button>
+                        <Button to="/equipment" className="flex1 xCtaButtonGap">
+                            Browse our inventory
+                        </Button>
+                    </div>
                 </div>
-            </div>
+            )}/>
         </Section>
 
         <Spacer/>
