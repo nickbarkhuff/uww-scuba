@@ -25,12 +25,8 @@ h1, h2, h3, p, a{
 .CoursesGapNegative{margin: 0}
 .CoursesDirection{flex-direction: row}
 
-.NavText{
-    padding-bottom: 5px;
-}
-.NavSpacing{
-    margin-right: 2rem;
-}
+.NavText{padding-bottom: 5px}
+.NavSpacing{margin-right: 2rem}
 .NavLine{
     height: 5px;
     transform: scaleX(0);
@@ -58,19 +54,11 @@ h1, h2, h3, p, a{
     opacity: 0;
     transition: opacity 0.6s;
 }
-.FadeInTrigger{
-    opacity: 1;
-}
+.FadeInTrigger{opacity: 1}
 
-.ZoomOnHoverParent{
-    overflow: hidden;
-}
-.ZoomOnHoverChild{
-    transition: transform .15s;
-}
-.ZoomOnHoverChild:hover{
-    transform: scale(1.1);
-}
+.ZoomOnHoverParent{overflow: hidden}
+.ZoomOnHoverChild{transition: transform .15s}
+.ZoomOnHoverChild:hover{transform: scale(1.1)}
 
 .YouTubeEmbedParent{
     position: relative;
@@ -105,18 +93,18 @@ h1, h2, h3, p, a{
 
 .bg2Light{background-color: rgba(0,0,0,0.75)}
 
-.bgBlog   {background-color: #27ae60}
-.bgVideo  {background-color: #f1c40f}
-.bgItem   {background-color: #d35400}
-.bgClass  {background-color: #8e44ad}
+.bgBlog{background-color: #27ae60}
+.bgVideo{background-color: #f1c40f}
+.bgItem{background-color: #d35400}
+.bgClass{background-color: #8e44ad}
 .bgDiveDay{background-color: #3498db}
 
 .bs1{box-shadow: 0 0 1rem 0.1rem black}
 
-.p1 {padding: 1rem}
+.p1{padding: 1rem}
 .pt1{padding-top: 1rem}
 .pb1{padding-bottom: 1rem}
-.p2 {padding: 3rem}
+.p2{padding: 3rem}
 .pt2{padding-top: 3rem}
 .pb2{padding-bottom: 3rem}
 .pb3{padding-bottom: 5rem}
@@ -133,15 +121,15 @@ h1, h2, h3, p, a{
 .fwBold{font-weight: bold}
 
 .taJustify{text-align: justify}
-.taCenter {text-align: center}
-.taRight  {text-align: right}
+.taCenter{text-align: center}
+.taRight{text-align: right}
 
-.bgSizeCover     {background-size: cover}
+.bgSizeCover{background-size: cover}
 .bgPositionCenter{background-position: center}
 
-.dBlock      {display: block}
+.dBlock{display: block}
 .dInlineBlock{display: inline-block}
-.dFlex       {display: flex}
+.dFlex{display: flex}
 
 .fdColumn{flex-direction: column}
 
