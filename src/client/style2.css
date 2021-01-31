@@ -53,10 +53,10 @@ h1, h2, h3, p, a{
     overflow: hidden;
 }
 .ZoomOnHoverChild{
-    transition: transform .2s;
+    transition: transform .15s;
 }
 .ZoomOnHoverChild:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .YouTubeEmbedParent{
@@ -78,6 +78,7 @@ h1, h2, h3, p, a{
 .hLogo           {height: 4rem}
 .pGutters        {padding: 0 10%}
 .mhJumbotron     {min-height: 750px}
+.mrNavSpacing    {margin-right: 2rem}
 .mhSectionSpacers{min-height: 8rem}
 
 .mCtaButtonsGap        {margin: 25px}
@@ -115,7 +116,7 @@ h1, h2, h3, p, a{
 .pb2{padding-bottom: 3rem}
 .pb3{padding-bottom: 5rem}
 
-.mr1{margin-right: 1rem}
+.mAuto{margin: auto}
 
 .w1{width: 75%}
 .w2{width: 90%}
@@ -125,8 +126,6 @@ h1, h2, h3, p, a{
 .bs1{box-shadow: 0 0 1rem 0.1rem black}
 
 .fwBold{font-weight: bold}
-
-.mAuto{margin: auto}
 
 .taJustify{text-align: justify}
 .taCenter {text-align: center}
