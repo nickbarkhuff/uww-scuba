@@ -72,11 +72,11 @@ h1, h2, h3, p, a{
 
 /* ************************* */
 
-.hLogo           {height: 4rem}
-.pGutters        {padding: 0 10%}
-.mhJumbotron     {min-height: 750px}
-.mrNavSpacing    {margin-right: 2rem}
-.mhSectionSpacers{min-height: 8rem}
+.hLogo          {height: 4rem}
+.pGutters       {padding: 0 10%}
+.mhJumbotron    {min-height: 750px}
+.mrNavSpacing   {margin-right: 2rem}
+.hSectionSpacers{height: 8rem}
 
 .mCtaButtonsGap        {margin: 25px}
 .mCtaButtonsGapNegative{margin: -25px}
