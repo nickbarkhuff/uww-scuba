@@ -46,12 +46,10 @@ h1, h2, h3, p, a{
 
 .xFadeIn{
     opacity: 0;
-    transform: translateY(15vh);
-    transition: opacity 0.75s ease, transform 0.75s ease;
+    transition: opacity 0.6s;
 }
 .xFadeInTrigger{
     opacity: 1;
-    transform: translateY(0);
 }
 
 
