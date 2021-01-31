@@ -20,7 +20,7 @@ h1, h2, h3, p, a{
     transform: scaleX(0);
     transition: transform .15s;
 }
-.NavParent:hover .NavLine{
+.NavParent:hover .NavLine, .NavLineOn{
     transform: scaleX(1);
 }
 

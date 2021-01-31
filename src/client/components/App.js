@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route, Link} from "react-router-dom";
+import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import {Section, Spacer} from "./components.js";
@@ -16,7 +16,22 @@ export const App = () => (
                     </Link>
                 </div>
                 <nav className="fs2">
-                    Nav
+                    {pages.map((page, i) => (
+                        <Link
+                            key={page.path}
+                            to={page.path}
+                            className={
+                                "dInlineBlock NavParent "
+                                + (i + 1 < pages.length ? "mrNavSpacing" : "")
+                            }
+                        >
+                            <div className="NavText">{page.name}</div>
+                            <div className={
+                                "NavLine bg4 br1 "
+                                + (useLocation().pathname === page.path ? "NavLineOn" : "")
+                            }/>
+                        </Link>
+                    ))}
                 </nav>
             </header>
         </Section>
