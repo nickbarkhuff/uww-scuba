@@ -21,7 +21,7 @@ export const App = () => (
                             key={page.path}
                             to={page.path}
                             className={
-                                "dInlineBlock NavParent "
+                                "NavParent dInlineBlock "
                                 + (i + 1 < pages.length ? "NavSpacing" : "")
                             }
                         >
