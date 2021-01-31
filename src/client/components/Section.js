@@ -4,7 +4,7 @@ export const Section = (props) => {
     return (
         <div
             className={
-                "pGutters "
+                "Gutters "
                 + (props.outerClassName || "")
             }
             style={

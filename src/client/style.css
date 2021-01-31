@@ -12,8 +12,24 @@ h1, h2, h3, p, a{
 
 /* ************************* */
 
+.Gutters{padding: 0 10%}
+.LogoHeight{height: 4rem}
+.JumbotronHeight{min-height: 700px}
+.SectionSpacing{height: 5rem}
+
+.CtaButtonsGapPositive{margin: 25px}
+.CtaButtonsGapNegative{margin: -25px}
+.CtaButtonsDirection{flex-direction: row}
+
+.CoursesGapPositive{margin: 0}
+.CoursesGapNegative{margin: 0}
+.CoursesDirection{flex-direction: row}
+
 .NavText{
     padding-bottom: 5px;
+}
+.NavSpacing{
+    margin-right: 2rem;
 }
 .NavLine{
     height: 5px;
@@ -69,22 +85,6 @@ h1, h2, h3, p, a{
     width: 100%;
     height: 100%;
 }
-
-/* ************************* */
-
-.hLogo          {height: 4rem}
-.pGutters       {padding: 0 10%}
-.mhJumbotron    {min-height: 750px}
-.mrNavSpacing   {margin-right: 2rem}
-.hSectionSpacers{height: 8rem}
-
-.mCtaButtonsGap        {margin: 25px}
-.mCtaButtonsGapNegative{margin: -25px}
-.fdCtaButtons          {flex-direction: row}
-
-.mCoursesGap        {margin: 0}
-.mCoursesGapNegative{margin: 0}
-.fdCourses          {flex-direction: row}
 
 /* ************************* */
 

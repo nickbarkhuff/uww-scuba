@@ -12,7 +12,7 @@ export const App = () => (
             <header className="c2 pt1 pb1 dFlex aiCenter">
                 <div className="flex1">
                     <Link to="/">
-                        <img className="hLogo" src={logo} alt="Logo"/>
+                        <img className="LogoHeight" src={logo} alt="Logo"/>
                     </Link>
                 </div>
                 <nav className="fs2">
@@ -22,7 +22,7 @@ export const App = () => (
                             to={page.path}
                             className={
                                 "dInlineBlock NavParent "
-                                + (i + 1 < pages.length ? "mrNavSpacing" : "")
+                                + (i + 1 < pages.length ? "NavSpacing" : "")
                             }
                         >
                             <div className="NavText">{page.name}</div>
