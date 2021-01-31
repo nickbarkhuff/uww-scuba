@@ -1,0 +1,156 @@
+*{box-sizing: border-box}
+
+html, body, #root{
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+h1, h2, h3, p, a{
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ************************* */
+
+.NavText{
+    padding-bottom: 5px;
+}
+.NavLine{
+    height: 5px;
+    transform: scaleX(0);
+    transition: transform .15s;
+}
+.NavParent:hover .NavLine{
+    transform: scaleX(1);
+}
+
+.ButtonChild{
+    padding: 1rem;
+    transition: transform .15s;
+}
+.ButtonParent:hover .ButtonChild{
+    box-shadow: 5px 10px 10px 0 black;
+    transform: translateY(-5px);
+}
+.ButtonParent .ButtonChild:active{
+    box-shadow: 5px 5px 10px 0 black;
+    transform: translateY(0);
+    transition: transform 0s;
+}
+
+.FadeIn{
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.FadeInTrigger{
+    opacity: 1;
+}
+
+.ZoomOnHoverParent{
+    overflow: hidden;
+}
+.ZoomOnHoverChild{
+    transition: transform .2s;
+}
+.ZoomOnHoverChild:hover{
+    transform: scale(1.2);
+}
+
+.YouTubeEmbedParent{
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 0;
+}
+.YouTubeEmbedChild{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ************************* */
+
+.hLogo           {height: 4rem}
+.pGutters        {padding: 0 10%}
+.mhJumbotron     {min-height: 750px}
+.mhSectionSpacers{min-height: 8rem}
+
+.mCtaButtonsGap        {margin: 25px}
+.mCtaButtonsGapNegative{margin: -25px}
+.fdCtaButtons          {flex-direction: row}
+
+.mCoursesGap        {margin: 0}
+.mCoursesGapNegative{margin: 0}
+.fdCourses          {flex-direction: row}
+
+/* ************************* */
+
+.ff1{font-family: sans-serif}
+
+.fs1{font-size: 1rem}
+.fs2{font-size: 1.25rem}
+.fs3{font-size: 2rem}
+.fs4{font-size: 2.5rem}
+
+.bg1{background-color: white}
+.bg2{background-color: black}
+.bg3{background-color: #000c2b}
+.bg4{background-color: #de3c4b}
+
+.bg2Light{background-color: rgba(0,0,0,0.75)}
+
+.c1{color: white}
+.c2{color: black}
+
+.p1 {padding: 1rem}
+.pt1{padding-top: 1rem}
+.pb1{padding-bottom: 1rem}
+.p2 {padding: 3rem}
+.pt2{padding-top: 3rem}
+.pb2{padding-bottom: 3rem}
+.pb3{padding-bottom: 5rem}
+
+.mr1{margin-right: 1rem}
+
+.w1{width: 75%}
+.w2{width: 90%}
+
+.br1{border-radius: 0.5rem}
+
+.bs1{box-shadow: 0 0 1rem 0.1rem black}
+
+.fwBold{font-weight: bold}
+
+.mAuto{margin: auto}
+
+.taJustify{text-align: justify}
+.taCenter {text-align: center}
+.taRight  {text-align: right}
+
+.bgSizeCover     {background-size: cover}
+.bgPositionCenter{background-position: center}
+
+.dBlock      {display: block}
+.dInlineBlock{display: inline-block}
+.dFlex       {display: flex}
+
+.fdColumn{flex-direction: column}
+
+.flex1{flex: 1}
+
+.aiCenter{align-items: center}
+
+.jcCenter{justify-content: center}
+
+/* ************************* */
+
+@media only screen and (max-width: 1200px){}
+
+@media only screen and (max-width: 900px){}
+
+@media only screen and (max-width: 600px){}
