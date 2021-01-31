@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import {Section, Spacer} from "./components.js";
@@ -11,9 +11,11 @@ export const App = () => (
         <Section outerClassName="bg1">
             <header className="c2 pt1 pb1 dFlex aiCenter">
                 <div className="flex1">
-                    <img className="hLogo" src={logo} alt="Logo"/>
+                    <Link to="/">
+                        <img className="hLogo" src={logo} alt="Logo"/>
+                    </Link>
                 </div>
-                <nav className="">
+                <nav className="fs2">
                     Nav
                 </nav>
             </header>
