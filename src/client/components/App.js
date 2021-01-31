@@ -50,7 +50,7 @@ export const App = () => (
         <Spacer push/>
 
         <Section outerClassName="bg2" innerClassName="xSectionPadding">
-            <footer className="fs2 taCenter">
+            <footer className="fs2 taCenter fwBold">
                 © {new Date().getFullYear()} Under Water Works
             </footer>
         </Section>
