@@ -93,10 +93,13 @@ h1, h2, h3, p, a{
 
 .ff1{font-family: sans-serif}
 
-.fs1{font-size: 1rem}
+.fs1{font-size: 1.1rem}
 .fs2{font-size: 1.25rem}
 .fs3{font-size: 2rem}
 .fs4{font-size: 2.5rem}
+
+.c1{color: white}
+.c2{color: black}
 
 .bg1{background-color: white}
 .bg2{background-color: black}
@@ -105,8 +108,13 @@ h1, h2, h3, p, a{
 
 .bg2Light{background-color: rgba(0,0,0,0.75)}
 
-.c1{color: white}
-.c2{color: black}
+.bgBlog   {background-color: #27ae60}
+.bgVideo  {background-color: #f1c40f}
+.bgItem   {background-color: #d35400}
+.bgClass  {background-color: #8e44ad}
+.bgDiveDay{background-color: #3498db}
+
+.bs1{box-shadow: 0 0 1rem 0.1rem black}
 
 .p1 {padding: 1rem}
 .pt1{padding-top: 1rem}
@@ -122,8 +130,6 @@ h1, h2, h3, p, a{
 .w2{width: 90%}
 
 .br1{border-radius: 0.5rem}
-
-.bs1{box-shadow: 0 0 1rem 0.1rem black}
 
 .fwBold{font-weight: bold}
 
