@@ -1,9 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+const styles = {
+    solid: "bg4 ",
+    transparent: "bgTransparent b1 "
+};
+
 export const Button = (props) => {
     const linkClassName = (
-        "ButtonChild bg4 c1 p1 br1 fs2 fwBold "
+        "ButtonChild c1 p1 br1 fs2 fwBold "
+        + (styles[props.style] || styles["solid"])
         + (props.block ? "dFlex aiCenter jcCenter hFull" : "dInlineBlock")
     );
 

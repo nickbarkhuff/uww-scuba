@@ -105,7 +105,13 @@ h1, h2, h3, p, a{
 .bgNewClass{background-color: #8e44ad}
 .bgNewDiveDay{background-color: #3498db}
 
+.bgTransparent{background-color: transparent}
+
 .bs1{box-shadow: 0 0 1rem .5rem #088ac8}
+
+.b1{border: 2px solid #de3c4b}
+
+.br1{border-radius: .5rem}
 
 .p1{padding: 1rem}
 .pt1{padding-top: 1rem}
@@ -123,8 +129,6 @@ h1, h2, h3, p, a{
 
 .hFull{height: 100%}
 .mhFull{min-height: 100%}
-
-.br1{border-radius: .5rem}
 
 .fwBold{font-weight: bold}
 
