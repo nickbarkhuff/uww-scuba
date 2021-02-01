@@ -119,9 +119,9 @@ h1, h2, h3, p, a{
 
 .w1{width: 75%}
 .w2{width: 90%}
-
 .mwFull{max-width: 100%}
 
+.hFull{height: 100%}
 .mhFull{min-height: 100%}
 
 .br1{border-radius: .5rem}
