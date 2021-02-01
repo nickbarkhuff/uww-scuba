@@ -10,7 +10,7 @@ export const Home = () => (
         <div className="Gutters JumbotronHeight pt2 pb2" style={{backgroundImage: `url(${diver})`}}>
             <section className="bg2Light dInlineBlock taCenter p2 br1">
                 <h1 className="fs4 fwBold pb1">Your diving adventure starts here</h1>
-                <p className="fs2 pb2">Explore a whole new world, right here in the Pacific Northwest!</p>
+                <p className="fs2 pb2">Discover an exciting new world, right here in the Pacific Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
                     <div className="CtaButtonsGapPositive flex1">
                         <Button to="/classes" block>Take a Class</Button>
@@ -60,8 +60,11 @@ export const Home = () => (
         <div className="SectionSpacing"/>
 
         <div className="Gutters">
-            <section className="">
-                <h2 className="">Learn to dive</h2>
+            <section>
+                <h2 className="fs4 pb1 taCenter fwBold">Jump right in</h2>
+                <div className="taRight">
+                    <Button to="/classes">See All Classes</Button>
+                </div>
             </section>
         </div>
 
@@ -78,8 +81,11 @@ export const Home = () => (
         <div className="SectionSpacing"/>
 
         <div className="Gutters">
-            <section className="">
-                <h2 className="">Our team</h2>
+            <section>
+                <h2 className="fs4 pb1 taCenter fwBold">The team</h2>
+                <div className="taRight">
+                    <Button to="/classes">Our Explorers</Button>
+                </div>
             </section>
         </div>
 
