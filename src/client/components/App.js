@@ -7,7 +7,7 @@ import {pages} from "../pages/pages.js";
 import logo from "../assets/logo.png";
 
 export const App = () => (
-    <div className="mhFull dFlex fdColumn ff1 bg3 c1">
+    <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1">
         <Section outerClassName="bg1">
             <header className="c2 pt1 pb1 dFlex aiCenter">
                 <div className="flex1">
