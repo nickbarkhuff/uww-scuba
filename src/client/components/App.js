@@ -2,11 +2,12 @@ import React from "react";
 import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
+import {Button} from "./Button.js";
 import {pages} from "../pages/pages.js";
 import logo from "../assets/logo.png";
 
 export const App = () => (
-    <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1">
+    <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1" id="top">
 
         {/* Header */}
         <div className="Gutters bg1">
@@ -52,8 +53,12 @@ export const App = () => (
 
         {/* Footer */}
         <div className="Gutters bg2">
-            <footer className="pt2 pb2 fs2 fwBold taCenter">
-                © {new Date().getFullYear()} Under Water Works
+            <footer className="pt2 pb2 dFlex aiCenter">
+                <Button to="#top" style="transparent" raw small>↑ Resurface ↑</Button>
+                <div className="flex1 fwBold fs2 taCenter">
+                    © {new Date().getFullYear()} Under Water Works
+                </div>
+                <Button to="#top" style="transparent" raw small>↑ Resurface ↑</Button>
             </footer>
         </div>
 
