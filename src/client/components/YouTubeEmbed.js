@@ -7,7 +7,6 @@ export const YouTubeEmbed = (props) => (
             src={props.src}
             allowFullScreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
         />
     </div>
 );
