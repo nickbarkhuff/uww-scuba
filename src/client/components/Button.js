@@ -1,21 +1,27 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-export const Button = (props) => (
-    <div
-        className={
-            "ButtonParent "
-            + (props.block ? "dBlock" : "dInlineBlock")
-        }
-    >
-        <Link
+export const Button = (props) => {
+    const linkClassName = (
+        "ButtonChild bg4 c1 p1 br1 fs2 fwBold "
+        + (props.block ? "dBlock" : "dInlineBlock")
+    );
+    return (
+        <div
             className={
-                "ButtonChild bg4 c1 p1 br1 fs2 fwBold "
+                "ButtonParent "
                 + (props.block ? "dBlock" : "dInlineBlock")
             }
-            to={props.to}
         >
-            {props.children}
-        </Link>
-    </div>
-);
+            {props.raw ? (
+                <a className={linkClassName} href={props.to}>
+                    {props.children}
+                </a>
+            ) : (
+                <Link className={linkClassName} to={props.to}>
+                    {props.children}
+                </Link>
+            )}
+        </div>
+    );
+};
