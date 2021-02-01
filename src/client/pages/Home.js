@@ -84,7 +84,7 @@ export const Home = () => (
             <section>
                 <h2 className="fs4 pb1 taCenter fwBold">The team</h2>
                 <div className="taRight">
-                    <Button to="/classes">Our Explorers</Button>
+                    <Button to="/staff">Our Explorers</Button>
                 </div>
             </section>
         </div>
