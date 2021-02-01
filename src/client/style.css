@@ -107,7 +107,7 @@ h1, h2, h3, p, a{
 
 .bgTransparent{background-color: transparent}
 
-.bs1{box-shadow: 0 0 1rem .5rem #088ac8}
+.bs1{box-shadow: 0 0 1.5rem 1.5rem black}
 
 .b1{border: 2px solid #de3c4b}
 
