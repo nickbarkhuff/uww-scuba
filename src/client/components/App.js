@@ -2,13 +2,14 @@ import React from "react";
 import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
-import {Section, Spacer} from "./components.js";
 import {pages} from "../pages/pages.js";
 import logo from "../assets/logo.png";
 
 export const App = () => (
     <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1">
-        <Section outerClassName="bg1">
+
+        {/* Header */}
+        <div className="Gutters bg1">
             <header className="c2 pt1 pb1 dFlex aiCenter">
                 <div className="flex1">
                     <Link to="/">
@@ -34,8 +35,9 @@ export const App = () => (
                     ))}
                 </nav>
             </header>
-        </Section>
+        </div>
 
+        {/* Pages */}
         <Switch>
             {pages.map(page => (
                 <Route key={page.path} path={page.path} exact>
@@ -45,12 +47,15 @@ export const App = () => (
             ))}
         </Switch>
 
-        <Spacer expand/>
+        {/* Push footer to bottom */}
+        <div className="flex1"/>
 
-        <Section outerClassName="bg2">
-            <footer className="c1 pt2 pb2 fs2 taCenter fwBold">
+        {/* Footer */}
+        <div className="Gutters bg2">
+            <footer className="pt2 pb2 fs2 fwBold taCenter">
                 © {new Date().getFullYear()} Under Water Works
             </footer>
-        </Section>
+        </div>
+
     </div>
 );
