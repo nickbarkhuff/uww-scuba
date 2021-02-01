@@ -1,15 +1,24 @@
 import React, {Fragment} from "react";
 
-import {YouTubeEmbed} from "../components/components.js";
+import {Button, YouTubeEmbed} from "../components/components.js";
 import diver from "../assets/diver.jpeg";
 import hours from "../assets/hours.png";
+import equipment from "../assets/equipment.jpeg";
 
 export const Home = () => (
     <Fragment>
         <div className="Gutters JumbotronHeight pt2 pb2" style={{backgroundImage: `url(${diver})`}}>
             <section className="bg2Light dInlineBlock taCenter p2 br1">
                 <h1 className="fs4 fwBold pb1">Your diving adventure starts here</h1>
-                <p className="fs2">Explore a whole new world, right here in the Pacific Northwest!</p>
+                <p className="fs2 pb2">Explore a whole new world, right here in the Pacific Northwest!</p>
+                <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
+                    <div className="CtaButtonsGapPositive flex1">
+                        <Button to="/classes" block>Take a class</Button>
+                    </div>
+                    <div className="CtaButtonsGapPositive flex1">
+                        <Button to="#contact" block>Contact us</Button>
+                    </div>
+                </div>
             </section>
         </div>
 
@@ -18,7 +27,7 @@ export const Home = () => (
         <div className="Gutters">
             <section className="bg1 c2 p2 taCenter br1 bs1">
                 <h2 className="fs4 fwBold pb1">Hours</h2>
-                <p className="fs2 pb1">
+                <p className="fs2 pb2">
                     Face masks are <strong>required</strong> to enter the store.
                 </p>
                 <img className="mwFull" src={hours} alt="Hours"/>
@@ -50,18 +59,36 @@ export const Home = () => (
 
         <div className="SectionSpacing"/>
 
-        <div className="Gutters">Classes</div>
+        <div className="Gutters">
+            <section className="">
+                <h2 className="">Learn to dive</h2>
+            </section>
+        </div>
 
         <div className="SectionSpacing"/>
 
-        <div className="Gutters">Equipment</div>
+        <div className="Gutters bgSizeCover bgPositionCenter" style={{backgroundImage: `url(${equipment})`}}>
+            <section className="taCenter p2">
+                <h2 className="fs4 fwBold pb1">Is your equipment in good hands?</h2>
+                <p className="fs3 pb2">Our technician has 35+ years experience.</p>
+                <Button to="/equipment">Maintenance info</Button>
+            </section>
+        </div>
 
         <div className="SectionSpacing"/>
 
-        <div className="Gutters">Staff</div>
+        <div className="Gutters">
+            <section className="">
+                <h2 className="">Our team</h2>
+            </section>
+        </div>
 
         <div className="SectionSpacing"/>
 
-        <div className="Gutters">Contact</div>
+        <div className="Gutters">
+            <section className="">
+                <h2 className="">Contact us</h2>
+            </section>
+        </div>
     </Fragment>
 );
