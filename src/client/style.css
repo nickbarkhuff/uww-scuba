@@ -50,7 +50,6 @@ h1, h2, h3, p, a{
 }
 
 .ButtonChild{
-    padding: 1rem;
     transition: transform .15s;
 }
 .ButtonParent:hover .ButtonChild{
@@ -83,7 +82,7 @@ h1, h2, h3, p, a{
 .ff1{font-family: sans-serif}
 
 .fs1{font-size: 1.1rem}
-.fs2{font-size: 1.4rem}
+.fs2{font-size: 1.3rem}
 .fs3{font-size: 1.8rem}
 .fs4{font-size: 2.5rem}
 
