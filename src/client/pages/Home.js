@@ -85,9 +85,9 @@ export const Home = () => (
 
         <div className="SectionSpacing"/>
 
-        <div className="Gutters" id="contact">
-            <section className="">
-                <h2 className="">Contact us</h2>
+        <div className="Gutters bg4" id="contact">
+            <section className="pt2 pb2">
+                <h2 className="fs4 fwBold taCenter">Info</h2>
             </section>
         </div>
     </Fragment>
