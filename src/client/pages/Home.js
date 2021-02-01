@@ -70,8 +70,8 @@ export const Home = () => (
         <div className="Gutters bgSizeCover bgPositionCenter" style={{backgroundImage: `url(${equipment})`}}>
             <section className="taCenter p2">
                 <h2 className="fs4 fwBold pb1">Is your equipment in good hands?</h2>
-                <p className="fs3 pb2">Our technician has 35+ years experience.</p>
-                <Button to="/equipment">Maintenance Info</Button>
+                <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
+                <Button to="/equipment">Maintenance Services</Button>
             </section>
         </div>
 
