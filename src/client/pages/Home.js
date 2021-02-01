@@ -13,10 +13,10 @@ export const Home = () => (
                 <p className="fs2 pb2">Explore a whole new world, right here in the Pacific Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
                     <div className="CtaButtonsGapPositive flex1">
-                        <Button to="/classes" block>Take a class</Button>
+                        <Button to="/classes" block>Take a Class</Button>
                     </div>
                     <div className="CtaButtonsGapPositive flex1">
-                        <Button to="#contact" block>Contact us</Button>
+                        <Button to="#contact" style="transparent" block raw>Location & Contact Info</Button>
                     </div>
                 </div>
             </section>
@@ -71,7 +71,7 @@ export const Home = () => (
             <section className="taCenter p2">
                 <h2 className="fs4 fwBold pb1">Is your equipment in good hands?</h2>
                 <p className="fs3 pb2">Our technician has 35+ years experience.</p>
-                <Button to="/equipment">Maintenance info</Button>
+                <Button to="/equipment">Maintenance Info</Button>
             </section>
         </div>
 
@@ -85,7 +85,7 @@ export const Home = () => (
 
         <div className="SectionSpacing"/>
 
-        <div className="Gutters">
+        <div className="Gutters" id="contact">
             <section className="">
                 <h2 className="">Contact us</h2>
             </section>
