@@ -25,8 +25,18 @@ h1, h2, h3, p, a{
 .CoursesGapNegative{margin: 0}
 .CoursesDirection{flex-direction: row}
 
-.NavText{padding-bottom: 5px}
-.NavSpacing{margin-right: 2rem}
+.ZoomOnHoverParent{overflow: hidden}
+.ZoomOnHoverChild{transition: transform .15s}
+.ZoomOnHoverChild:hover{transform: scale(1.1)}
+
+.FadeIn{
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.FadeInTrigger{opacity: 1}
+
+.NavLineSpacing{padding-bottom: 5px}
+.NavItemSpacing{margin-right: 2rem}
 .NavLine{
     height: 5px;
     transform: scaleX(0);
@@ -49,16 +59,6 @@ h1, h2, h3, p, a{
     transform: translateY(0);
     transition: transform 0s;
 }
-
-.FadeIn{
-    opacity: 0;
-    transition: opacity 0.6s;
-}
-.FadeInTrigger{opacity: 1}
-
-.ZoomOnHoverParent{overflow: hidden}
-.ZoomOnHoverChild{transition: transform .15s}
-.ZoomOnHoverChild:hover{transform: scale(1.1)}
 
 .YouTubeEmbedParent{
     position: relative;
@@ -93,11 +93,11 @@ h1, h2, h3, p, a{
 
 .bg2Light{background-color: rgba(0,0,0,0.75)}
 
-.bgBlog{background-color: #27ae60}
-.bgVideo{background-color: #f1c40f}
-.bgItem{background-color: #d35400}
-.bgClass{background-color: #8e44ad}
-.bgDiveDay{background-color: #3498db}
+.bgNewBlog{background-color: #27ae60}
+.bgNewVideo{background-color: #f1c40f}
+.bgNewItem{background-color: #d35400}
+.bgNewClass{background-color: #8e44ad}
+.bgNewDiveDay{background-color: #3498db}
 
 .bs1{box-shadow: 0 0 1rem 0.1rem black}
 

@@ -22,10 +22,10 @@ export const App = () => (
                             to={page.path}
                             className={
                                 "NavParent dInlineBlock "
-                                + (i + 1 < pages.length ? "NavSpacing" : "")
+                                + (i + 1 < pages.length ? "NavItemSpacing" : "")
                             }
                         >
-                            <div className="NavText">{page.name}</div>
+                            <div className="NavLineSpacing">{page.name}</div>
                             <div className={
                                 "NavLine bg4 br1 "
                                 + (useLocation().pathname === page.path ? "NavLineOn" : "")
