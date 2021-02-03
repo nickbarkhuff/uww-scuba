@@ -31,9 +31,12 @@ h1, h2, h3, p, a{
 .CoursesGapNegative{margin: 0}
 .CoursesDirection{flex-direction: row}
 
-.ZoomOnHoverParent{overflow: hidden}
-.ZoomOnHoverChild{transition: transform .15s}
+.ZoomOnHoverChild{
+    transition: transform .15s;
+    display: block;
+}
 .ZoomOnHoverChild:hover{transform: scale(1.1)}
+.ZoomOnHoverParent{overflow: hidden}
 
 .FadeIn{
     opacity: 0;

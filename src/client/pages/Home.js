@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
 
-import {Button, YouTubeEmbed} from "../components/components.js";
+import {Button, Card, YouTubeEmbed} from "../components/components.js";
+import {database} from "../database.js";
 import diver from "../assets/diver.jpeg";
 import hours from "../assets/hours.png";
 import equipment from "../assets/equipment.jpeg";
@@ -60,8 +61,24 @@ export const Home = () => (
         <div className="SectionSpacing"/>
 
         <div className="Gutters">
-            <section>
+            <section className="fs2">
                 <h2 className="fs4 pb1 taCenter fwBold">Jump right in</h2>
+                <p className="pb3 taJustify">
+                    No matter your level of experience, we have something for you! Our PADI instructors are dedicated to teaching newcomers about this rewarding sport, and advancing the skills of those with many dives already logged. At Under Water Works, <strong>our top priority is always safety</strong>; you'll learn how to look out for yourself and others in a controlled, well-supervised environment.
+                </p>
+                <div className="pb3">
+                    <div className="CoursesGapNegative CoursesDirection dFlex">
+                        {database.courses.map(course => (
+                            <div className="CoursesGapPositive flex1">
+                                <Card
+                                    title={course.name}
+                                    description={course.description}
+                                    img={course.img}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
                 <div className="taRight">
                     <Button to="/classes">See All Classes</Button>
                 </div>
