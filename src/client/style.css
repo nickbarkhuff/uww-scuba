@@ -37,9 +37,17 @@ h1, h2, h3, p, a{
 
 .FadeIn{
     opacity: 0;
-    transition: opacity .6s;
+    transition: opacity .3s;
 }
-.FadeInTrigger{opacity: 1}
+.FadeInRight{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity .3s, transform .3s;
+}
+.FadeInTrigger{
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .NavLineSpacing{padding-bottom: 5px}
 .NavItemSpacing{margin-right: 2rem}
