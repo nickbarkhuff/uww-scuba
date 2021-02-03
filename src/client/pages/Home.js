@@ -42,7 +42,7 @@ export const Home = () => (
                 <div className="dInlineBlock w1">
                     <YouTubeEmbed src="https://www.youtube.com/embed/Io1OF2OkTWY"/>
                     <p className="pt1">
-                        (This is just a placeholder, of course. A video about 1 or 2 minutes long introducing your shop will put a human face on your business, and let potential customers see the store without having to actually come in. This is especially important because of covid. The better the quality of the video, the more trustworthy your brand will be.)
+                        (This is just a placeholder. A video about 1 or 2 minutes long introducing your shop will put a human face on your business, and let potential customers see the store without having to actually come in. This is especially important because of covid. The better the quality of the video, the more trustworthy your brand will be.)
                     </p>
                 </div>
             </section>
