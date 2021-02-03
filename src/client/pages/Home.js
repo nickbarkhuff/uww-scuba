@@ -8,7 +8,7 @@ import equipment from "../assets/equipment.jpeg";
 
 export const Home = () => (
     <Fragment>
-        <div className="Gutters JumbotronHeight pt2 pb2" style={{backgroundImage: `url(${diver})`}}>
+        <div className="Gutters JumbotronHeight pt2 pb2 bgPositionCenter bgSizeCover" style={{backgroundImage: `url(${diver})`}}>
             <section className="bg2Light dInlineBlock taCenter p2 br1">
                 <h1 className="fs4 fwBold pb1">Your diving adventure starts here</h1>
                 <p className="fs2 pb2">Discover an exciting new world, right here in the Pacific Northwest!</p>
