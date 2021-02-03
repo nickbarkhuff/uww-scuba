@@ -99,8 +99,20 @@ export const Home = () => (
         <div className="SectionSpacing"/>
 
         <div className="Gutters">
-            <section>
-                <h2 className="fs4 pb2 taCenter fwBold">The team</h2>
+            <section className="fs2 taJustify">
+                <h2 className="fs4 pb1 taCenter fwBold">About us</h2>
+                <p className="pb1">
+                    Under Water Works was opened in 1975, by Jerry and Hilde Rood. They first began by teaching classes at Tigard High School, and opened the retail shop shortly afterwards. Hilde owned Under Water Works for forty years, and sold it in 2015 to Gretchen Slack.
+                </p>
+                <p className="pb1">
+                    At Under Water Works, we are are passionate about making your diving experience as good as it can be! We love scuba diving, and are excited to share it with you. Whether you're interested in learning to dive, continue your diving education, purchase equipment, or get information about dive travel, we would love to share any information we have with you!
+                </p>
+                <p className="pb1">
+                    We believe in an honest and straight forward approach to diving. Our PADI Instructors will teach you the information you need to be a safe, and independent diver. If you're looking to purchase equipment, we will strive to find what will work best for you, and the type of diving you love.
+                </p>
+                <p className="pb2">
+                    Come in, and meet our staff, and check out our shop!
+                </p>
                 <div className="pb2">
                     <div className="StaffGapNegative StaffDirection dFlex">
                         {database.staff.map(person => (
@@ -117,7 +129,7 @@ export const Home = () => (
                     </div>
                 </div>
                 <div className="taRight">
-                    <Button to="/staff">Our Explorers</Button>
+                    <Button to="/staff">The team</Button>
                 </div>
             </section>
         </div>
