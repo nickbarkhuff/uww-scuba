@@ -1,4 +1,4 @@
-import discoverScuba from "./assets/courses/discover-scuba.png";
+import discoverScuba from "./assets/courses/discover-scuba.jpeg";
 import openWater from "./assets/courses/open-water.jpeg";
 import divemaster from "./assets/courses/divemaster.jpeg";
 
