@@ -69,7 +69,7 @@ export const Home = () => (
                 <div className="pb3">
                     <div className="CoursesGapNegative CoursesDirection dFlex">
                         {database.courses.map(course => (
-                            <div className="CoursesGapPositive flex1">
+                            <div key={course.name} className="CoursesGapPositive flex1">
                                 <Card
                                     style="imgFirst"
                                     title={course.name}
@@ -116,7 +116,7 @@ export const Home = () => (
                 <div className="pb2">
                     <div className="StaffGapNegative StaffDirection dFlex">
                         {database.staff.map(person => (
-                            <div className="StaffGapPositive flex1">
+                            <div key={person.first+person.last} className="StaffGapPositive flex1">
                                 <Card
                                     title={<Fragment>{person.first} <span className="fwBold">{person.last}</span></Fragment>}
                                     subtitle={person.title}
