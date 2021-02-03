@@ -71,6 +71,7 @@ export const Home = () => (
                         {database.courses.map(course => (
                             <div className="CoursesGapPositive flex1">
                                 <Card
+                                    style="imgFirst"
                                     title={course.name}
                                     description={course.description}
                                     img={course.img}
@@ -99,7 +100,22 @@ export const Home = () => (
 
         <div className="Gutters">
             <section>
-                <h2 className="fs4 pb1 taCenter fwBold">The team</h2>
+                <h2 className="fs4 pb3 taCenter fwBold">The team</h2>
+                <div className="pb3">
+                    <div className="StaffGapNegative StaffDirection dFlex">
+                        {database.staff.map(person => (
+                            <div className="StaffGapPositive flex1">
+                                <Card
+                                    title={<Fragment>{person.first} <span className="fwBold">{person.last}</span></Fragment>}
+                                    subtitle={person.title}
+                                    description={person.description[0]}
+                                    img={person.img}
+                                    imgAlt={`${person.first} ${person.last}`}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
                 <div className="taRight">
                     <Button to="/staff">Our Explorers</Button>
                 </div>

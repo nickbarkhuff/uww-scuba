@@ -31,6 +31,17 @@ h1, h2, h3, p, a{
 .CoursesGapNegative{margin: 0}
 .CoursesDirection{flex-direction: row}
 
+.StaffGapPositive{margin: 50px}
+.StaffGapNegative{margin: -50px}
+.StaffDirection{flex-direction: row}
+
+.Clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.Clamp5{-webkit-line-clamp: 5}
+
 .ZoomOnHoverChild{
     transition: transform .15s;
     display: block;
@@ -118,7 +129,7 @@ h1, h2, h3, p, a{
 
 .bgTransparent{background-color: transparent}
 
-.bs1{box-shadow: 0 0 1.5rem 1.5rem black}
+.bs1{box-shadow: 0 0 1.5rem 1rem black}
 
 .b1{border: 2px solid #de3c4b}
 
@@ -136,12 +147,15 @@ h1, h2, h3, p, a{
 
 .w1{width: 75%}
 .w2{width: 90%}
+.wFull{width: 100%}
 .mwFull{max-width: 100%}
 
 .hFull{height: 100%}
 .mhFull{min-height: 100%}
 
 .fwBold{font-weight: bold}
+
+.fsItalic{font-style: italic}
 
 .taJustify{text-align: justify}
 .taCenter{text-align: center}
