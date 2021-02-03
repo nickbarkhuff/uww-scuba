@@ -100,8 +100,8 @@ export const Home = () => (
 
         <div className="Gutters">
             <section>
-                <h2 className="fs4 pb3 taCenter fwBold">The team</h2>
-                <div className="pb3">
+                <h2 className="fs4 pb2 taCenter fwBold">The team</h2>
+                <div className="pb2">
                     <div className="StaffGapNegative StaffDirection dFlex">
                         {database.staff.map(person => (
                             <div className="StaffGapPositive flex1">
