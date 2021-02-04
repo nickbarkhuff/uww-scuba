@@ -9,7 +9,7 @@ export const Home = () => {
     let refs = {};
     let triggers = {};
 
-    ["cta", "hours", "video", "new", "classes", "equipment", "about"]
+    ["cta", "hours", "video", "new", "classes", "equipment", "about", "cards"]
         .forEach(section => {
             const [ref, trigger] = useObserver();
             refs[section] = ref;
@@ -125,10 +125,21 @@ export const Home = () => {
                     </p>
                     <div className="pb2">
                         <div className="StaffGapNegative StaffDirection dFlex">
-                            {database.staff.map(person => (
-                                <div key={person.first+person.last} className="StaffGapPositive flex1">
+                            {database.staff.map((person, i) => (
+                                <div
+                                    key={person.first+person.last}
+                                    className={"StaffGapPositive flex1 FadeInRight " + triggers.cards}
+                                    style={{transitionDelay: `.${i}s`}}
+                                >
                                     <Card
-                                        title={<Fragment>{person.first} <span className="fwBold">{person.last}</span></Fragment>}
+                                        title={
+                                            <>
+                                                {person.first + " "}
+                                                <span className="fwBold" ref={i === 0 ? refs.cards : undefined}>
+                                                    {person.last}
+                                                </span>
+                                            </>
+                                        }
                                         subtitle={person.title}
                                         description={person.description[0]}
                                         img={person.img}
