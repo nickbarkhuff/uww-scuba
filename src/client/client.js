@@ -3,9 +3,14 @@ import ReactDOM from "react-dom";
 import {BrowserRouter} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
-import favicon from "./assets/favicon.png";
-import {App} from "./components/App.js";
-import "./style.css";
+import {App} from "./App.js";
+import "./style/a-main.css";
+import "./style/b-1200px.css";
+import "./style/c-900px.css";
+import "./style/d-600px.css";
+import "./style/e-accessibility.css";
+
+import {favicon} from "../shared/assets.js";
 
 ReactDOM.render(
 	(

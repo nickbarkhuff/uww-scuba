@@ -2,9 +2,10 @@ import React from "react";
 import {Switch, Route, Link, useLocation} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
-import {Button} from "./Button.js";
-import {pages} from "../pages/pages.js";
-import logo from "../assets/logo.png";
+import {database} from "./database.js";
+
+import {Button} from "../shared/lib.js";
+import {logo} from "../shared/assets.js";
 
 export const App = () => (
     <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1" id="top">
@@ -18,13 +19,13 @@ export const App = () => (
                     </Link>
                 </div>
                 <nav className="fs2">
-                    {pages.map((page, i) => (
+                    {database.pages.map((page, i) => (
                         <Link
                             key={page.path}
                             to={page.path}
                             className={
                                 "NavParent dInlineBlock "
-                                + (i + 1 < pages.length ? "NavItemSpacing" : "")
+                                + (i + 1 < database.pages.length ? "NavItemSpacing" : "")
                             }
                         >
                             <div className="NavLineSpacing">{page.name}</div>
@@ -40,7 +41,7 @@ export const App = () => (
 
         {/* Pages */}
         <Switch>
-            {pages.map(page => (
+            {database.pages.map(page => (
                 <Route key={page.path} path={page.path} exact>
                     <Helmet><title>{page.name}</title></Helmet>
                     {page.content}

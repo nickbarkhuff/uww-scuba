@@ -1,10 +1,9 @@
 import React, {Fragment} from "react";
 
-import {Button, Card, YouTubeEmbed} from "../components/components.js";
 import {database} from "../database.js";
-import diver from "../assets/diver.jpeg";
-import hours from "../assets/hours.png";
-import equipment from "../assets/equipment.jpeg";
+
+import {Button, Card, YouTubeEmbed} from "../../shared/lib.js";
+import {diver, hours, equipment} from "../../shared/assets.js";
 
 export const Home = () => (
     <Fragment>
@@ -68,7 +67,7 @@ export const Home = () => (
                 </p>
                 <div className="pb3">
                     <div className="CoursesGapNegative CoursesDirection dFlex">
-                        {database.courses.map(course => (
+                        {database.classes.map(course => (
                             <div key={course.name} className="CoursesGapPositive flex1">
                                 <Card
                                     style="imgFirst"
