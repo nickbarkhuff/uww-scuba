@@ -10,15 +10,18 @@ import "./style/c-900px.css";
 import "./style/d-600px.css";
 import "./style/e-accessibility.css";
 
+import {ObserverWrapper} from "../shared/lib.js";
 import {favicon} from "../shared/assets.js";
 
 ReactDOM.render(
 	(
 		<BrowserRouter>
-			<Helmet titleTemplate="UWW | %s">
-				<link rel="icon" href={favicon}/>
-			</Helmet>
-			<App/>
+			<ObserverWrapper>
+				<Helmet titleTemplate="UWW | %s">
+					<link rel="icon" href={favicon}/>
+				</Helmet>
+				<App/>
+			</ObserverWrapper>
 		</BrowserRouter>
 	),
 	document.getElementById("root")
