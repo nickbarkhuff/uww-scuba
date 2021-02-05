@@ -29,12 +29,14 @@ const Hours = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className="Gutters">
-            <section className={"bg1 c2 p2 taCenter br1 bs1 FadeIn " + trigger}>
-                <h2 className="fs4 fwBold pb1" ref={ref}>Hours</h2>
-                <p className="fs2 pb2">
-                    Face masks are <strong>required</strong> to enter the store.
-                </p>
-                <img className="mwFull" src={hours} alt="Hours"/>
+            <section className={"bg1 c2 p2 taCenter br1 bs1"}>
+                <div className={"FadeIn " + trigger}>
+                    <h2 className="fs4 fwBold pb1" ref={ref}>Hours</h2>
+                    <p className="fs2 pb2">
+                        Face masks are <strong>required</strong> to enter the store.
+                    </p>
+                    <img className="mwFull" src={hours} alt="Hours"/>
+                </div>
             </section>
         </div>
     );
@@ -60,8 +62,8 @@ const Video = () => {
 const WhatsNew = () => {
     const [ref, trigger] = useObserver();
     return (
-        <div className={"Gutters bg1 FadeIn " + trigger}>
-            <section className="c2 pt2 pb2">
+        <div className={"Gutters bg1"}>
+            <section className={"c2 pt2 pb2 FadeIn " + trigger}>
                 <h2 className="fs4 pb1" ref={ref}>What's new?</h2>
                 <p>Blog posts, YouTube videos, new inventory items, upcoming classes, Fun Dive Days</p>
             </section>
@@ -103,8 +105,8 @@ const Classes = () => {
 const Equipment = () => {
     const [ref, trigger] = useObserver();
     return (
-        <div className={"Gutters bgSizeCover bgPositionCenter FadeIn " + trigger} style={{backgroundImage: `url(${equipment})`}}>
-            <section className={"taCenter p2"}>
+        <div className={"Gutters bgSizeCover bgPositionCenter"} style={{backgroundImage: `url(${equipment})`}}>
+            <section className={"taCenter p2 FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Is your equipment in good hands?</h2>
                 <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
                 <Button to="/equipment">Maintenance Services</Button>
