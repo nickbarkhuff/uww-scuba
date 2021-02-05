@@ -22,5 +22,6 @@ export const Equipment = () => (
                 </div>
             </section>
         </div>
+        <div className="SectionSpacing"/>
     </Fragment>
 );

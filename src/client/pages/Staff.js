@@ -13,5 +13,6 @@ export const Staff = () => (
                 </div>
             </section>
         </div>
+        <div className="SectionSpacing"/>
     </Fragment>
 );

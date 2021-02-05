@@ -19,5 +19,6 @@ export const Classes = () => (
                 </div>
             </section>
         </div>
+        <div className="SectionSpacing"/>
     </Fragment>
 );

@@ -19,5 +19,6 @@ export const Schedule = () => (
                 </div>
             </section>
         </div>
+        <div className="SectionSpacing"/>
     </Fragment>
 );
