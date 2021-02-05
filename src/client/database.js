@@ -7,9 +7,30 @@ import {Schedule} from "./pages/Schedule.js";
 import {Staff} from "./pages/Staff.js";
 import {Blog} from "./pages/Blog.js";
 
-import {discoverScuba, openWater, divemaster, gretchenSlack, daveIshmael, davidFrye} from "../shared/assets.js";
+import {
+    discoverScuba,
+    openWater,
+    divemaster,
+    gretchenSlack,
+    daveIshmael,
+    davidFrye,
+    computer,
+    computerBlog,
+    pugetSound,
+    rescueDiver,
+    redondoBeach
+} from "../shared/assets.js";
+
+const whatsNewTypes = {
+    "blog": 1,
+    "video": 2,
+    "item": 3,
+    "class": 4,
+    "dive": 5
+};
 
 export const database = {
+    whatsNewTypes,
     pages: [{
         name: "Home",
         path: "/",
@@ -78,5 +99,31 @@ export const database = {
             "I look forward to having you join me in the classroom, pool, or open water environment for your next scuba course so I may share some of these experiences with you."
         ],
         img: davidFrye
+    }],
+    whatsNew: [{
+        title: "Super Dive Computer 3000: The latest in dive technology",
+        type: whatsNewTypes["item"],
+        description: "Come down to our shop and see it for yourself!",
+        img: computer
+    }, {
+        title: "Is the Super Dive Computer 3000 right for you?",
+        type: whatsNewTypes["blog"],
+        description: "Read what our staff said about this exciting new piece of tech",
+        img: computerBlog
+    }, {
+        title: "Puget Sound Compilation",
+        type: whatsNewTypes["video"],
+        description: "See what our students found lurking just below the surface!",
+        img: pugetSound
+    }, {
+        title: "Rescue Diver",
+        type: whatsNewTypes["class"],
+        description: "Become a more confident and self-reliant diver - only a few seats remaining",
+        img: rescueDiver
+    }, {
+        title: "Redondo Beach (De Moines, WA)",
+        type: whatsNewTypes["dive"],
+        description: "The calm surface and easy entry and exit at Redondo Beach makes it a relaxing spot for newbies and experienced divers alike",
+        img: redondoBeach
     }]
 };
