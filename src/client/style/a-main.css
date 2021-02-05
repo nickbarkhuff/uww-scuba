@@ -121,13 +121,19 @@ h1, h2, h3, p, a{
 
 .bg2Light{background-color: rgba(0,0,0,.75)}
 
-.bgNewBlog{background-color: #27ae60}
-.bgNewVideo{background-color: #f1c40f}
-.bgNewItem{background-color: #d35400}
-.bgNewClass{background-color: #8e44ad}
-.bgNewDiveDay{background-color: #3498db}
-
 .bgTransparent{background-color: transparent}
+
+.bgWhatsNewBlog{background-color: #27ae60}
+.bgWhatsNewVideo{background-color: #f1c40f}
+.bgWhatsNewItem{background-color: #d35400}
+.bgWhatsNewClass{background-color: #8e44ad}
+.bgWhatsNewDive{background-color: #3498db}
+
+.bsWhatsNewBlog{box-shadow: 0 0 1rem .1rem #27ae60}
+.bsWhatsNewVideo{box-shadow: 0 0 1rem .1rem #f1c40f}
+.bsWhatsNewItem{box-shadow: 0 0 1rem .1rem #d35400}
+.bsWhatsNewClass{box-shadow: 0 0 1rem .1rem #8e44ad}
+.bsWhatsNewDive{box-shadow: 0 0 1rem .1rem #3498db}
 
 .bs1{box-shadow: 0 0 1.5rem 1rem black}
 
