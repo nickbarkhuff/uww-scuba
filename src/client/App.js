@@ -18,7 +18,7 @@ export const App = () => (
                         <img className="LogoHeight" src={logo} alt="Logo"/>
                     </Link>
                 </div>
-                <nav className="fs2">
+                <nav className={"DisplayLargeNav fs2"}>
                     {database.pages.map((page, i) => (
                         <Link
                             key={page.path}
@@ -35,6 +35,9 @@ export const App = () => (
                             }/>
                         </Link>
                     ))}
+                </nav>
+                <nav className={"DisplaySmallNav"}>
+                    Small Nav
                 </nav>
             </header>
         </div>

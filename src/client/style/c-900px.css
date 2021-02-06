@@ -1,6 +1,9 @@
 @media only screen and (max-width: 900px){
     .LogoHeight{height: 3rem}
 
+    .DisplayLargeNav{display: none}
+    .DisplaySmallNav{display: initial}
+
     .CtaButtonsGapPositive{margin: 10px}
     .CtaButtonsGapNegative{margin: -10px}
     .CtaButtonsDirection{flex-direction: column}

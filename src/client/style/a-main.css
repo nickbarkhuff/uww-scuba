@@ -23,6 +23,9 @@ h1, h2, h3, h4, p, a{
 .JumbotronHeight{min-height: 700px}
 .SectionSpacing{height: 8rem}
 
+.DisplayLargeNav{display: initial}
+.DisplaySmallNav{display: none}
+
 .CtaButtonsGapPositive{margin: 25px}
 .CtaButtonsGapNegative{margin: -25px}
 .CtaButtonsDirection{flex-direction: row}
