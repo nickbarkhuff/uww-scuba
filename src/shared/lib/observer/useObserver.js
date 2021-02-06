@@ -2,7 +2,7 @@ import {useState, useEffect, useContext, useRef} from "react";
 
 import {ObserverContext} from "./ObserverContext.js";
 
-export const useObserver = () => {
+export const useObserver = (threshold) => {
     const context = useContext(ObserverContext);
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef();
@@ -15,7 +15,7 @@ export const useObserver = () => {
                         setIsVisible(true);
                 });
             },
-            {threshold: 1}
+            {threshold: threshold || 1}
         );
 
         if(ref.current)

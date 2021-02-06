@@ -116,7 +116,8 @@ const Equipment = () => {
 
 const About = () => {
     const [sectionRef, sectionTrigger] = useObserver();
-    const [cardsRef, cardsTrigger] = useObserver();
+    const [cardsRef, cardsTrigger] = useObserver(0.2);
+
     return (
         <div className="Gutters">
             <section className={"fs2 taJustify FadeIn " + sectionTrigger}>
@@ -134,11 +135,11 @@ const About = () => {
                     Come in, and meet our staff, and check out our shop!
                 </p>
                 <div className="pb2">
-                    <div className="StaffGapNegative StaffDirection dFlex">
+                    <div className="StaffGapNegative StaffDirection dFlex" ref={cardsRef}>
                         {database.staff.map((person, i) => (
                             <div
                                 key={person.firstName + person.lastName}
-                                className={"StaffGapPositive flex1 mwNone"}
+                                className={"StaffGapPositive flex1 mwNone FadeInRight " + cardsTrigger}
                                 style={{transitionDelay: `.${i}s`}}
                             >
                                 <StaffCard
