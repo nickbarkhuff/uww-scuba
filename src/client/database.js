@@ -14,11 +14,15 @@ import {
     gretchenSlack,
     daveIshmael,
     davidFrye,
+    advancedOpenWater,
+    alki,
+    pnw,
+    sanJuan,
     computer,
-    computerBlog,
     pugetSound,
-    rescueDiver,
-    redondoBeach
+    faceMask,
+    redondoBeach,
+    rescueDiver
 } from "../shared/assets.js";
 
 const whatsNewTypes = {
@@ -101,20 +105,30 @@ export const database = {
         image: davidFrye
     }],
     whatsNew: [{
-        name: "Super Dive Computer 3000: The latest in dive technology",
+        name: "Aqua Lung i770R Dive Computer",
         type: whatsNewTypes["item"],
-        description: "Come down to our shop and see it for yourself!",
+        description: "Featuring ultra-bright TFT color screen and wireless Bluetooth connectivity",
         image: computer
     }, {
-        name: "Is the Super Dive Computer 3000 right for you?",
+        name: "Kirby Morgan 300-038 EXO-BR Full Face Mask",
+        type: whatsNewTypes["item"],
+        description: "Cutting-edge full face mask technology",
+        image: faceMask
+    }, {
+        name: "Our favorite dive spots in the Pacific Northwest",
         type: whatsNewTypes["blog"],
-        description: "Read what our staff said about this exciting new piece of tech",
-        image: computerBlog
+        description: "If you haven't visited these locations, you're missing out!",
+        image: pnw
     }, {
         name: "Puget Sound Compilation",
         type: whatsNewTypes["video"],
         description: "See what our students found lurking just below the surface!",
         image: pugetSound
+    }, {
+        name: "Advanced Open Water",
+        type: whatsNewTypes["class"],
+        description: "Open to anyone with an Open Water certification",
+        image: advancedOpenWater
     }, {
         name: "Rescue Diver",
         type: whatsNewTypes["class"],
@@ -123,7 +137,17 @@ export const database = {
     }, {
         name: "Redondo Beach (De Moines, WA)",
         type: whatsNewTypes["dive"],
-        description: "The calm surface and easy entry and exit at Redondo Beach makes it a relaxing spot for newbies and experienced divers alike",
+        description: "The calm surface and easy entry and exit at Redondo Beach make a most relaxing dive location",
         image: redondoBeach
+    }, {
+        name: "San Juan Islands (San Juan County, WA)",
+        type: whatsNewTypes["dive"],
+        description: "Stunningly beautiful, this archipelago features over 400 islands",
+        image: sanJuan
+    }, {
+        name: "Alki Beach (Seattle, WA)",
+        type: whatsNewTypes["dive"],
+        description: "A stone’s throw from one of Seattle’s most famous beaches, Alki Beach Park is a fantastic shore dive for both beginners and experienced divers",
+        image: alki
     }]
 };

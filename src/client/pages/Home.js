@@ -63,9 +63,15 @@ const WhatsNew = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className={"Gutters bg1"}>
-            <section className={"c2 pt2 pb2 FadeIn " + trigger}>
-                <h2 className="fs4 pb1" ref={ref}>What's new?</h2>
-                <p>Blog posts, YouTube videos, new inventory items, upcoming classes, Fun Dive Days</p>
+            <section className={"c2 pt3 pb3 FadeIn " + trigger}>
+                <h2 className="fs4 pb2 fwBold taCenter" ref={ref}>What's new?</h2>
+                <div className={"WhatsNewGapNegative WhatsNewDirection dFlex flexWrapWrap"}>
+                    {database.whatsNew.map(item => (
+                        <div className={"WhatsNewGapPositive WhatsNewItemWidth"}>
+                            <WhatsNewCard {...item}/>
+                        </div>
+                    ))}
+                </div>
             </section>
         </div>
     );
@@ -84,11 +90,7 @@ const Classes = () => {
                     <div className="CoursesGapNegative CoursesDirection dFlex">
                         {database.classes.map(theClass => (
                             <div key={theClass.name} className="CoursesGapPositive flex1">
-                                <ClassCard
-                                    image={theClass.image}
-                                    name={theClass.name}
-                                    description={theClass.description}
-                                />
+                                <ClassCard {...theClass}/>
                             </div>
                         ))}
                     </div>
@@ -105,7 +107,7 @@ const Equipment = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className={"Gutters bgSizeCover bgPositionCenter"} style={{backgroundImage: `url(${equipment})`}}>
-            <section className={"taCenter p3 c2 FadeIn " + trigger}>
+            <section className={"taCenter p4 c2 FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Is your equipment in good hands?</h2>
                 <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
                 <Button to="/equipment">Maintenance Services</Button>
@@ -142,13 +144,7 @@ const About = () => {
                                 className={"StaffGapPositive flex1 mwNone FadeInRight " + cardsTrigger}
                                 style={{transitionDelay: `.${i}s`}}
                             >
-                                <StaffCard
-                                    firstName={person.firstName}
-                                    lastName={person.lastName}
-                                    title={person.title}
-                                    image={person.image}
-                                    description={person.description.join(" ")}
-                                />
+                                <StaffCard {...person}/>
                             </div>
                         ))}
                     </div>

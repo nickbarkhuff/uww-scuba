@@ -27,6 +27,11 @@ h1, h2, h3, h4, p, a{
 .CtaButtonsGapNegative{margin: -25px}
 .CtaButtonsDirection{flex-direction: row}
 
+.WhatsNewGapPositive{margin: 50px}
+.WhatsNewGapNegative{margin: -50px}
+.WhatsNewItemWidth{width: calc(33% - 100px)}
+.WhatsNewDirection{flex-direction: row}
+
 .CoursesGapPositive{margin: 25px}
 .CoursesGapNegative{margin: -25px}
 .CoursesDirection{flex-direction: row}
@@ -118,6 +123,12 @@ h1, h2, h3, h4, p, a{
 .c1{color: black}
 .c2{color: white}
 
+.cWhatsNewBlog{color: #27ae60}
+.cWhatsNewVideo{color: #f1c40f}
+.cWhatsNewItem{color: #d35400}
+.cWhatsNewClass{color: #8e44ad}
+.cWhatsNewDive{color: #3498db}
+
 .bg1{background-color: black}
 .bg2{background-color: white}
 .bg3{background-color: #f5f5f5}
@@ -134,11 +145,11 @@ h1, h2, h3, h4, p, a{
 .bgWhatsNewClass{background-color: #8e44ad}
 .bgWhatsNewDive{background-color: #3498db}
 
-.bsWhatsNewBlog{box-shadow: 0 0 1rem .1rem #27ae60}
-.bsWhatsNewVideo{box-shadow: 0 0 1rem .1rem #f1c40f}
-.bsWhatsNewItem{box-shadow: 0 0 1rem .1rem #d35400}
-.bsWhatsNewClass{box-shadow: 0 0 1rem .1rem #8e44ad}
-.bsWhatsNewDive{box-shadow: 0 0 1rem .1rem #3498db}
+.bsWhatsNewBlog{box-shadow: 0 0 1rem .5rem #27ae60}
+.bsWhatsNewVideo{box-shadow: 0 0 1rem .5rem #f1c40f}
+.bsWhatsNewItem{box-shadow: 0 0 1rem .5rem #d35400}
+.bsWhatsNewClass{box-shadow: 0 0 1rem .5rem #8e44ad}
+.bsWhatsNewDive{box-shadow: 0 0 1rem .5rem #3498db}
 
 .bs1{box-shadow: 0 0 1rem .1rem black}
 
@@ -152,7 +163,9 @@ h1, h2, h3, h4, p, a{
 .p2{padding: 3rem}
 .pt2{padding-top: 3rem}
 .pb2{padding-bottom: 3rem}
-.p3{padding: 12rem}
+.pt3{padding-top: 5rem}
+.pb3{padding-bottom: 5rem}
+.p4{padding: 12rem}
 .pbFull{padding-bottom: 100%}
 
 .mAuto{margin: auto}
@@ -181,7 +194,7 @@ h1, h2, h3, h4, p, a{
 .dFlex{display: flex}
 
 .fdColumn{flex-direction: column}
-
+.flexWrapWrap{flex-wrap: wrap}
 .flex1{flex: 1}
 
 .aiCenter{align-items: center}
