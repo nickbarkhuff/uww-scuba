@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 
 import {database} from "../database.js";
 
-import {Button, Card, YouTubeEmbed, useObserver} from "../../shared/lib.js";
+import {Button, ClassCard, StaffCard, WhatsNewCard, YouTubeEmbed, useObserver} from "../../shared/lib.js";
 import {diver, hours, equipment} from "../../shared/assets.js";
 
 const Jumbotron = () => {
@@ -82,13 +82,12 @@ const Classes = () => {
                 </p>
                 <div className="pb3">
                     <div className="CoursesGapNegative CoursesDirection dFlex">
-                        {database.classes.map(course => (
-                            <div key={course.name} className="CoursesGapPositive flex1">
-                                <Card
-                                    style="imgFirst"
-                                    title={course.name}
-                                    description={course.description}
-                                    img={course.img}
+                        {database.classes.map(theClass => (
+                            <div key={theClass.name} className="CoursesGapPositive flex1">
+                                <ClassCard
+                                    image={theClass.image}
+                                    name={theClass.name}
+                                    description={theClass.description}
                                 />
                             </div>
                         ))}
@@ -138,23 +137,16 @@ const About = () => {
                     <div className="StaffGapNegative StaffDirection dFlex">
                         {database.staff.map((person, i) => (
                             <div
-                                key={person.first+person.last}
-                                className={"StaffGapPositive flex1 FadeInRight " + cardsTrigger}
+                                key={person.firstName + person.lastName}
+                                className={"StaffGapPositive flex1 mwNone"}
                                 style={{transitionDelay: `.${i}s`}}
                             >
-                                <Card
-                                    title={
-                                        <>
-                                            {person.first + " "}
-                                            <span className="fwBold" ref={i === 0 ? cardsRef : undefined}>
-                                                {person.last}
-                                            </span>
-                                        </>
-                                    }
-                                    subtitle={person.title}
-                                    description={person.description[0]}
-                                    img={person.img}
-                                    imgAlt={`${person.first} ${person.last}`}
+                                <StaffCard
+                                    firstName={person.firstName}
+                                    lastName={person.lastName}
+                                    title={person.title}
+                                    image={person.image}
+                                    description={person.description.join(" ")}
                                 />
                             </div>
                         ))}

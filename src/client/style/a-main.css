@@ -6,7 +6,7 @@ body{margin: 0}
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p, a{
+h1, h2, h3, h4, p, a{
     margin: 0;
     font: inherit;
     color: inherit;
@@ -27,20 +27,27 @@ h1, h2, h3, p, a{
 .CtaButtonsGapNegative{margin: -25px}
 .CtaButtonsDirection{flex-direction: row}
 
-.CoursesGapPositive{margin: 0}
-.CoursesGapNegative{margin: 0}
+.CoursesGapPositive{margin: 25px}
+.CoursesGapNegative{margin: -25px}
 .CoursesDirection{flex-direction: row}
 
-.StaffGapPositive{margin: 50px}
-.StaffGapNegative{margin: -50px}
+.StaffGapPositive{margin: 25px}
+.StaffGapNegative{margin: -25px}
 .StaffDirection{flex-direction: row}
 
-.Clamp{
+/* If used *inside* a flexbox child (not *on* it), must set min-width: 0 on the flexbox child itself */
+.Ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.MultiLineEllipsis{
+    overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    overflow: hidden;
 }
-.Clamp5{-webkit-line-clamp: 5}
+.MultiLineEllipsis8{-webkit-line-clamp: 8}
 
 .ZoomOnHoverChild{
     transition: transform .15s;
@@ -116,7 +123,7 @@ h1, h2, h3, p, a{
 
 .bg1{background-color: white}
 .bg2{background-color: black}
-.bg3{background-color: #000c2b}
+.bg3{background-color: #01091e}
 .bg4{background-color: #de3c4b}
 
 .bg2Light{background-color: rgba(0,0,0,.75)}
@@ -148,6 +155,7 @@ h1, h2, h3, p, a{
 .pt2{padding-top: 3rem}
 .pb2{padding-bottom: 3rem}
 .pb3{padding-bottom: 5rem}
+.pbFull{padding-bottom: 100%}
 
 .mAuto{margin: auto}
 
@@ -155,13 +163,14 @@ h1, h2, h3, p, a{
 .w2{width: 90%}
 .wFull{width: 100%}
 .mwFull{max-width: 100%}
+.mwNone{min-width: 0}
 
 .hFull{height: 100%}
 .mhFull{min-height: 100%}
 
 .fwBold{font-weight: bold}
 
-.fsItalic{font-style: italic}
+.fStyleItalic{font-style: italic}
 
 .taJustify{text-align: justify}
 .taCenter{text-align: center}
