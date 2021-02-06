@@ -28,8 +28,8 @@ const Jumbotron = () => {
 const Hours = () => {
     const [ref, trigger] = useObserver();
     return (
-        <div className="Gutters">
-            <section className={"bg2 c1 p2 taCenter br1 bs1"}>
+        <div className="Gutters bg1 pt3 pb3">
+            <section className={"bg2 c1 p2 taCenter br1 bs2"}>
                 <div className={"FadeIn " + trigger}>
                     <h2 className="fs4 fwBold pb1" ref={ref}>Hours</h2>
                     <p className="fs2 pb2">
@@ -45,7 +45,7 @@ const Hours = () => {
 const Video = () => {
     const [ref, trigger] = useObserver();
     return (
-        <div className="Gutters bg5 pt2 pb2 c2">
+        <div className="Gutters c1">
             <section className={"taCenter FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Welcome to UWW!</h2>
                 <div className="dInlineBlock w1">
@@ -171,7 +171,6 @@ export const Home = () => {
     return (
         <Fragment>
             <Jumbotron/>
-            <div className="SectionSpacing"/>
             <Hours/>
             <div className="SectionSpacing"/>
             <Video/>

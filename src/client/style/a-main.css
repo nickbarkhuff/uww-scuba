@@ -133,7 +133,6 @@ h1, h2, h3, h4, p, a{
 .bg2{background-color: white}
 .bg3{background-color: #f5f5f5}
 .bg4{background-color: #de3c4b}
-.bg5{background-color: #01091c}
 
 .bg1Light{background-color: rgba(0,0,0,.75)}
 
@@ -152,6 +151,7 @@ h1, h2, h3, h4, p, a{
 .bsWhatsNewDive{box-shadow: 0 0 1rem .5rem #3498db}
 
 .bs1{box-shadow: 0 0 1rem .1rem black}
+.bs2{box-shadow: 0 0 1rem .5rem #de3c4b}
 
 .b1{border: 2px solid #de3c4b}
 
