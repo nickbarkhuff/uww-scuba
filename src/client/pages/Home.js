@@ -9,7 +9,7 @@ const Jumbotron = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className="Gutters JumbotronHeight pt2 pb2 bgPositionCenter bgSizeCover" style={{backgroundImage: `url(${diver})`}}>
-            <section className={"bg2Light dInlineBlock taCenter p2 br1 FadeInRight " + trigger}>
+            <section className={"bg1Light dInlineBlock taCenter c2 p2 br1 FadeInRight " + trigger}>
                 <h1 className="fs4 fwBold pb1" ref={ref}>Your diving adventure starts here</h1>
                 <p className="fs2 pb2">Discover an exciting new world, right here in the Pacific Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
@@ -29,7 +29,7 @@ const Hours = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className="Gutters">
-            <section className={"bg1 c2 p2 taCenter br1 bs1"}>
+            <section className={"bg2 c1 p2 taCenter br1 bs1"}>
                 <div className={"FadeIn " + trigger}>
                     <h2 className="fs4 fwBold pb1" ref={ref}>Hours</h2>
                     <p className="fs2 pb2">
@@ -45,7 +45,7 @@ const Hours = () => {
 const Video = () => {
     const [ref, trigger] = useObserver();
     return (
-        <div className="Gutters">
+        <div className="Gutters bg5 pt2 pb2 c2">
             <section className={"taCenter FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Welcome to UWW!</h2>
                 <div className="dInlineBlock w1">
@@ -105,7 +105,7 @@ const Equipment = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className={"Gutters bgSizeCover bgPositionCenter"} style={{backgroundImage: `url(${equipment})`}}>
-            <section className={"taCenter p2 FadeIn " + trigger}>
+            <section className={"taCenter p4 c2 FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Is your equipment in good hands?</h2>
                 <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
                 <Button to="/equipment">Maintenance Services</Button>
@@ -164,7 +164,7 @@ const About = () => {
 const Info = () => {
     return (
         <div className="Gutters bg4" id="contact">
-            <section className="pt2 pb2">
+            <section className="pt2 pb2 c2">
                 <h2 className="fs4 fwBold taCenter">Info</h2>
             </section>
         </div>

@@ -53,7 +53,7 @@ export const App = () => (
         <div className="flex1"/>
 
         {/* Footer */}
-        <div className="Gutters bg2">
+        <div className="Gutters bg1 c2">
             <footer className="pt2 pb2 dFlex aiCenter">
                 <Button to="#top" style="transparent" raw small>↑ Resurface ↑</Button>
                 <div className="flex1 fwBold fs2 taCenter">

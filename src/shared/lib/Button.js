@@ -8,7 +8,7 @@ const styles = {
 
 export const Button = (props) => {
     const linkClassName = (
-        "ButtonChild c1 p1 br1 fwBold "
+        "ButtonChild c2 p1 br1 fwBold "
         + (props.small ? "fs1 " : "fs2 ")
         + (props.block ? "dFlex aiCenter jcCenter hFull " : "dInlineBlock ")
         + (styles[props.style] || styles["solid"])

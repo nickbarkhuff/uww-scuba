@@ -4,7 +4,7 @@ export const Staff = () => (
     <Fragment>
         <div className="SectionSpacing"/>
         <div className="Gutters">
-            <section className="bg1 p2 br1 bs1 c2">
+            <section className="bg2 c1 p2 br1 bs1">
                 <h2 className="fs4 taCenter pb1">Staff</h2>
                 <div className="taJustify">
                     <p>
