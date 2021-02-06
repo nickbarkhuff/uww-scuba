@@ -13,11 +13,8 @@ export const Equipment = () => (
                     <p className="pb1">
                         Ideally, you would have your entire inventory on here, complete with up-to-date information and at least one high-quality image of each product. This will take a lot of time, but creating this catalog is one of the services I can offer you, if you choose to hire me as your developer and marketing expert.
                     </p>
-                    <p className="pb1">
-                        The next step after that would be to allow users to actually order products online, either through shipping or in-store pickup. That means you would have to have someone fulfilling these online orders, which is itself a lot of work, but it is a potential future option if you are interested.
-                    </p>
                     <p>
-                        Since the other three services (besides buying) don't require all this cataloging, building out those first would be pretty simple. You could list the equipment you rent out, what maintenance work you can do, and the types of gas you can fill. Again, promotional offers can help you make more sales, especially when it comes to first time customers: you could offer packages, such as discounting rental rates when someone signs up for their first class.
+                        Before that is done, we can display just your newest or top-selling items on the home page.
                     </p>
                 </div>
             </section>
