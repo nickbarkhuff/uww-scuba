@@ -75,12 +75,12 @@ const Classes = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className="Gutters">
-            <section className={"fs2 FadeIn " + trigger}>
-                <h2 className="fs4 pb1 taCenter fwBold" ref={ref}>Jump right in</h2>
-                <p className="pb3 taJustify">
+            <section className={"fs2 taCenter FadeIn " + trigger}>
+                <h2 className="fs4 pb1 fwBold" ref={ref}>Jump right in</h2>
+                <p className="pb2 w1 dInlineBlock">
                     No matter your level of experience, we have something for you! Our PADI instructors are dedicated to teaching newcomers about this rewarding sport, and advancing the skills of those with many dives already logged. At Under Water Works, <strong>our top priority is always safety</strong>; you'll learn how to look out for yourself and others in a controlled, well-supervised environment.
                 </p>
-                <div className="pb3">
+                <div className="pb2">
                     <div className="CoursesGapNegative CoursesDirection dFlex">
                         {database.classes.map(theClass => (
                             <div key={theClass.name} className="CoursesGapPositive flex1">
@@ -105,7 +105,7 @@ const Equipment = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className={"Gutters bgSizeCover bgPositionCenter"} style={{backgroundImage: `url(${equipment})`}}>
-            <section className={"taCenter p4 c2 FadeIn " + trigger}>
+            <section className={"taCenter p3 c2 FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Is your equipment in good hands?</h2>
                 <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
                 <Button to="/equipment">Maintenance Services</Button>

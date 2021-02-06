@@ -152,14 +152,12 @@ h1, h2, h3, h4, p, a{
 .p2{padding: 3rem}
 .pt2{padding-top: 3rem}
 .pb2{padding-bottom: 3rem}
-.pb3{padding-bottom: 5rem}
-.p4{padding: 12rem}
+.p3{padding: 12rem}
 .pbFull{padding-bottom: 100%}
 
 .mAuto{margin: auto}
 
 .w1{width: 75%}
-.w2{width: 90%}
 .wFull{width: 100%}
 .mwFull{max-width: 100%}
 .mwNone{min-width: 0}
