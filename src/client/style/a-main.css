@@ -49,10 +49,7 @@ h1, h2, h3, h4, p, a{
 }
 .MultiLineEllipsis8{-webkit-line-clamp: 8}
 
-.ZoomOnHoverChild{
-    transition: transform .15s;
-    display: block;
-}
+.ZoomOnHoverChild{transition: transform .15s}
 .ZoomOnHoverChild:hover{transform: scale(1.1)}
 .ZoomOnHoverParent{overflow: hidden}
 
