@@ -1,1 +1,20 @@
-@media only screen and (max-width: 900px){}
+@media only screen and (max-width: 900px){
+    .LogoHeight{height: 3rem}
+
+    .CtaButtonsGapPositive{margin: 10px}
+    .CtaButtonsGapNegative{margin: -10px}
+    .CtaButtonsDirection{flex-direction: column}
+
+    .WhatsNewGapPositive{margin: 50px}
+    .WhatsNewGapNegative{margin: -50px}
+    .WhatsNewItemWidth{width: calc(100% - 100px)}
+
+    .CoursesDirection{flex-direction: column}
+
+    .StaffItemWidth{width: 80%}
+
+    .FooterDirection{flex-direction: column}
+    .FooterAlignItems{align-items: stretch}
+    .FooterItemSpacing{padding-bottom: 1rem}
+    .DisplayFirstFooterButton{display: none}
+}

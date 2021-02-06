@@ -9,7 +9,7 @@ const Jumbotron = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className="Gutters JumbotronHeight pt2 pb2 bgPositionCenter bgSizeCover" style={{backgroundImage: `url(${diver})`}}>
-            <section className={"bg1Light dInlineBlock taCenter c2 p2 br1 FadeInRight " + trigger}>
+            <section className={"CtaDisplay bg1Light taCenter c2 p2 br1 FadeInRight " + trigger}>
                 <h1 className="fs4 fwBold pb1" ref={ref}>Your diving adventure starts here</h1>
                 <p className="fs2 pb2">Discover an exciting new world, right here in the Pacific Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
@@ -107,7 +107,7 @@ const Equipment = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className={"Gutters bgSizeCover bgPositionCenter"} style={{backgroundImage: `url(${equipment})`}}>
-            <section className={"taCenter p4 c2 FadeIn " + trigger}>
+            <section className={"taCenter pt4 pb4 c2 FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Is your equipment in good hands?</h2>
                 <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
                 <Button to="/equipment">Maintenance Services</Button>
@@ -137,11 +137,11 @@ const About = () => {
                     Come in, and meet our staff, and check out our shop!
                 </p>
                 <div className="pb2">
-                    <div className="StaffGapNegative StaffDirection dFlex" ref={cardsRef}>
+                    <div className="StaffGapNegative StaffDirection dFlex aiCenter" ref={cardsRef}>
                         {database.staff.map((person, i) => (
                             <div
                                 key={person.firstName + person.lastName}
-                                className={"StaffGapPositive flex1 mwNone FadeInRight " + cardsTrigger}
+                                className={"StaffGapPositive StaffItemWidth flex1 mwNone FadeInRight " + cardsTrigger}
                                 style={{transitionDelay: `.${i}s`}}
                             >
                                 <StaffCard {...person}/>

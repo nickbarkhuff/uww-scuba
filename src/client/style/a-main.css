@@ -26,6 +26,7 @@ h1, h2, h3, h4, p, a{
 .CtaButtonsGapPositive{margin: 25px}
 .CtaButtonsGapNegative{margin: -25px}
 .CtaButtonsDirection{flex-direction: row}
+.CtaDisplay{display: inline-block}
 
 .WhatsNewGapPositive{margin: 50px}
 .WhatsNewGapNegative{margin: -50px}
@@ -38,7 +39,13 @@ h1, h2, h3, h4, p, a{
 
 .StaffGapPositive{margin: 25px}
 .StaffGapNegative{margin: -25px}
+.StaffItemWidth{width: 100%}
 .StaffDirection{flex-direction: row}
+
+.FooterDirection{flex-direction: row}
+.FooterAlignItems{align-items: center}
+.FooterItemSpacing{padding-bottom: 0}
+.DisplayFirstFooterButton{display: initial}
 
 /* If used *inside* a flexbox child (not *on* it), must set min-width: 0 on the flexbox child itself */
 .Ellipsis{
@@ -165,7 +172,8 @@ h1, h2, h3, h4, p, a{
 .pb2{padding-bottom: 3rem}
 .pt3{padding-top: 5rem}
 .pb3{padding-bottom: 5rem}
-.p4{padding: 12rem}
+.pt4{padding-top: 12rem}
+.pb4{padding-bottom: 12rem}
 .pbFull{padding-bottom: 100%}
 
 .mAuto{margin: auto}

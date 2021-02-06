@@ -54,12 +54,16 @@ export const App = () => (
 
         {/* Footer */}
         <div className="Gutters bg1 c2">
-            <footer className="pt2 pb2 dFlex aiCenter">
-                <Button to="#top" style="transparent" raw small>↑ Resurface ↑</Button>
-                <div className="flex1 fwBold fs2 taCenter">
+            <footer className="pt2 pb2 dFlex aiCenter FooterDirection FooterAlignItems">
+                <div className={"DisplayFirstFooterButton"}>
+                    <Button to="#top" style="transparent" raw small block>↑ Resurface ↑</Button>
+                </div>
+                <div className="flex1 fwBold fs2 taCenter FooterItemSpacing">
                     © {new Date().getFullYear()} Under Water Works
                 </div>
-                <Button to="#top" style="transparent" raw small>↑ Resurface ↑</Button>
+                <div>
+                    <Button to="#top" style="transparent" raw small block>↑ Resurface ↑</Button>
+                </div>
             </footer>
         </div>
 

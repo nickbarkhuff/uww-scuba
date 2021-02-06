@@ -1,1 +1,23 @@
-@media only screen and (max-width: 600px){}
+@media only screen and (max-width: 600px){
+    .Gutters{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .SectionSpacing{height: 5rem}
+
+    .fs1{font-size: 1rem}
+    .fs2{font-size: 1.1rem}
+    .fs3{font-size: 1.2rem}
+    .fs4{font-size: 1.3rem}
+
+    .p1{padding: 1rem}
+    .pt1{padding-top: 1rem}
+    .pb1{padding-bottom: 1rem}
+    .p2{padding: 2rem}
+    .pt2{padding-top: 2rem}
+    .pb2{padding-bottom: 2rem}
+    .pt3{padding-top: 3rem}
+    .pb3{padding-bottom: 3rem}
+    .pt4{padding-top: 5rem}
+    .pb4{padding-bottom: 5rem}
+}
