@@ -45,8 +45,8 @@ const Hours = () => {
 const Video = () => {
     const [ref, trigger] = useObserver();
     return (
-        <div className="Gutters c1">
-            <section className={"taCenter FadeIn " + trigger}>
+        <div className="Gutters">
+            <section className={"c2 taCenter FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Welcome to UWW!</h2>
                 <div className="dInlineBlock w1">
                     <YouTubeEmbed src="https://www.youtube.com/embed/Io1OF2OkTWY"/>
@@ -81,7 +81,7 @@ const Classes = () => {
     const [ref, trigger] = useObserver();
     return (
         <div className="Gutters">
-            <section className={"fs2 taCenter FadeIn " + trigger}>
+            <section className={"c2 fs2 taCenter FadeIn " + trigger}>
                 <h2 className="fs4 pb1 fwBold" ref={ref}>Jump right in</h2>
                 <p className="pb2 w1 dInlineBlock">
                     No matter your level of experience, we have something for you! Our PADI instructors are dedicated to teaching newcomers about this rewarding sport, and advancing the skills of those with many dives already logged. At Under Water Works, <strong>our top priority is always safety</strong>; you'll learn how to look out for yourself and others in a controlled, well-supervised environment.
@@ -122,7 +122,7 @@ const About = () => {
 
     return (
         <div className="Gutters">
-            <section className={"fs2 taJustify FadeIn " + sectionTrigger}>
+            <section className={"c2 fs2 taJustify FadeIn " + sectionTrigger}>
                 <h2 className="fs4 pb1 taCenter fwBold" ref={sectionRef}>About us</h2>
                 <p className="pb1">
                     Under Water Works was opened in 1975, by Jerry and Hilde Rood. They first began by teaching classes at Tigard High School, and opened the retail shop shortly afterwards. Hilde owned Under Water Works for forty years, and sold it in 2015 to Gretchen Slack.
