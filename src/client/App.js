@@ -11,14 +11,14 @@ export const App = () => (
     <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1" id="top">
 
         {/* Header */}
-        <div className="Gutters bg1">
-            <header className="c2 pt1 pb1 dFlex aiCenter">
-                <div className="flex1">
-                    <Link to="/">
-                        <img className="LogoHeight" src={logo} alt="Logo"/>
-                    </Link>
+        <div className="Gutters Nav NavHeight bg1">
+            <header className="c2 pt1 pb1 dFlex aiCenter hFull">
+                <div className="flex1 hFull">
+                    <a href="#top" className={"hFull dFlex aiCenter"}>
+                        <img className="NavLogoHeight maxHeightFull" src={logo} alt=""/>
+                    </a>
                 </div>
-                <nav className={"DisplayLargeNav fs2"}>
+                <nav className={"NavDisplayLarge fs2"}>
                     {database.pages.map((page, i) => (
                         <Link
                             key={page.path}
@@ -36,12 +36,17 @@ export const App = () => (
                         </Link>
                     ))}
                 </nav>
-                <nav className={"DisplaySmallNav"}>
-                    <img src={smallNavOpen} alt="" className={"NavButtonHeight"}/>
-                    {/*<img src={smallNavClose} alt="" className={"NavButtonHeight"}/>*/}
+                <nav className={"NavDisplaySmall hFull"}>
+                    <div className={"hFull dFlex aiCenter"}>
+                        <img src={smallNavOpen} alt="" className={"NavButtonHeight maxHeightFull"}/>
+                    </div>
+                    {/*<img src={smallNavClose} alt="" className={""}/>*/}
                 </nav>
             </header>
         </div>
+
+        {/* Since the nav is position: fixed, we need to push the rest of the page content down */}
+        <div className={"NavHeight"}/>
 
         {/* Pages */}
         <Switch>

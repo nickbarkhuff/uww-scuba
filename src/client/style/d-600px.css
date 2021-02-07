@@ -1,8 +1,4 @@
 @media only screen and (max-width: 600px){
-    .Gutters{
-        padding-left: 2%;
-        padding-right: 2%;
-    }
     .SectionSpacing{height: 5rem}
 
     .fs1{font-size: 1rem}

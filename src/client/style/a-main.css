@@ -19,13 +19,19 @@ h1, h2, h3, h4, p, a{
     padding-left: 10%;
     padding-right: 10%;
 }
-.LogoHeight{height: 4rem}
-.NavButtonHeight{height: 1.5rem}
 .JumbotronHeight{min-height: 700px}
 .SectionSpacing{height: 8rem}
 
-.DisplayLargeNav{display: initial}
-.DisplaySmallNav{display: none}
+.NavHeight{height: 7rem}
+.NavLogoHeight{height: 4rem}
+.NavButtonHeight{height: 1.5rem}
+.NavDisplayLarge{display: initial}
+.NavDisplaySmall{display: none}
+.Nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
 
 .CtaButtonsGapPositive{margin: 25px}
 .CtaButtonsGapNegative{margin: -25px}
@@ -188,6 +194,7 @@ h1, h2, h3, h4, p, a{
 
 .hFull{height: 100%}
 .mhFull{min-height: 100%}
+.maxHeightFull{max-height: 100%}
 
 .fwBold{font-weight: bold}
 
