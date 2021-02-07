@@ -10,7 +10,8 @@ const Jumbotron = () => {
     return (
         <div className="Gutters JumbotronHeight pt2 pb2 bgPositionCenter bgSizeCover" style={{backgroundImage: `url(${diver})`}}>
             <section className={"CtaDisplay bg1Light taCenter c2 p2 br1 FadeInRight " + trigger}>
-                <h1 className="fs4 fwBold pb1" ref={ref}>Your diving adventure starts here</h1>
+                <span ref={ref}/>
+                <h1 className="fs4 fwBold pb1">Your diving adventure starts here</h1>
                 <p className="fs2 pb2">Discover an exciting new world, right here in the Pacific Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
                     <div className="CtaButtonsGapPositive flex1">
