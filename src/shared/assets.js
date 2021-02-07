@@ -4,6 +4,9 @@ import favicon from "./assets/favicon.png";
 import hours from "./assets/hours.png";
 import logo from "./assets/logo.png";
 
+import smallNavOpen from "./assets/small-nav-open.png";
+import smallNavClose from "./assets/small-nav-close.png";
+
 import discoverScuba from "./assets/classes/discover-scuba.jpeg";
 import divemaster from "./assets/classes/divemaster.jpeg";
 import openWater from "./assets/classes/open-water.jpeg";
@@ -28,12 +31,18 @@ export {
     favicon,
     hours,
     logo,
+
+    smallNavOpen,
+    smallNavClose,
+
     discoverScuba,
     divemaster,
     openWater,
+
     daveIshmael,
     davidFrye,
     gretchenSlack,
+
     advancedOpenWater,
     alki,
     pnw,
