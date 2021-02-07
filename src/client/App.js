@@ -83,7 +83,7 @@ export const App = () => {
                     "bg2 "
                     + (displayMobileNav ? "" : "dNone ")
                 }
-                style={{position: "fixed", width: "100%", zIndex: "1", top: "0", bottom: "0", overflow: "auto", backfaceVisibility: "hidden"}}
+                style={{position: "fixed", width: "100%", zIndex: "1", top: "0", bottom: "0", overflow: "auto"}}
             >
                 <div className={"NavHeight"}/>
                 <div className={"Gutters pt2 taCenter fs4"}>
