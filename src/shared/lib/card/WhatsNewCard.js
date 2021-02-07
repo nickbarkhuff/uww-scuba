@@ -31,9 +31,9 @@ export const WhatsNewCard = (props) => {
     }[props.type];
 
     return (
-        <div className={"ZoomOnHoverChild taCenter bg2 c1 br1 p1 hFull " + boxShadow}>
+        <div className={"ZoomOnHover taCenter bg2 c1 br1 p1 hFull " + boxShadow}>
             <div className={"pb1"}>
-                <SquareImage src={props.image}/>
+                <SquareImage src={props.image} rounded/>
             </div>
             <h4 className={"pb1 fwBold fStyleItalic " + typeColor}>{typeName}</h4>
             <h3 className={"pb1 fs2 fwBold"}>{props.name}</h3>

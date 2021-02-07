@@ -64,9 +64,8 @@ h1, h2, h3, h4, p, a{
 }
 .MultiLineEllipsis8{-webkit-line-clamp: 8}
 
-.ZoomOnHoverChild{transition: transform .15s}
-.ZoomOnHoverChild:hover{transform: scale(1.1)}
-.ZoomOnHoverParent{overflow: hidden}
+.ZoomOnHover{transition: transform .15s}
+.ZoomOnHover:hover{transform: scale(1.1)}
 
 .FadeIn{
     opacity: 0;
@@ -199,6 +198,8 @@ h1, h2, h3, h4, p, a{
 
 .bgSizeCover{background-size: cover}
 .bgPositionCenter{background-position: center}
+
+.ofHidden{overflow: hidden}
 
 .dBlock{display: block}
 .dInlineBlock{display: inline-block}
