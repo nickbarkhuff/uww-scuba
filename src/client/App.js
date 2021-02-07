@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 import {database} from "./database.js";
 
 import {Button} from "../shared/lib.js";
-import {logo} from "../shared/assets.js";
+import {logo, smallNavOpen, smallNavClose} from "../shared/assets.js";
 
 export const App = () => (
     <div className="mhFull dFlex fdColumn ff1 bg3 c1 fs1" id="top">
@@ -37,7 +37,8 @@ export const App = () => (
                     ))}
                 </nav>
                 <nav className={"DisplaySmallNav"}>
-                    Small Nav
+                    <img src={smallNavOpen} alt="" className={"NavButtonHeight"}/>
+                    {/*<img src={smallNavClose} alt="" className={"NavButtonHeight"}/>*/}
                 </nav>
             </header>
         </div>

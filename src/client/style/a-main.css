@@ -20,6 +20,7 @@ h1, h2, h3, h4, p, a{
     padding-right: 10%;
 }
 .LogoHeight{height: 4rem}
+.NavButtonHeight{height: 1.5rem}
 .JumbotronHeight{min-height: 700px}
 .SectionSpacing{height: 8rem}
 
