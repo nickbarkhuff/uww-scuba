@@ -144,8 +144,8 @@ h1, h2, h3, h4, p, a{
 
 .bg1{background-color: black}
 .bg2{background-color: white}
-.bg3{background-color: #182C61}
-.bg4{background-color: #de3c4b}
+.bg3{background-color: #041237}
+.bg4{background-color: #bf0606}
 
 .bg1Light{background-color: rgba(0,0,0,.75)}
 .bg2Light{background-color: rgba(255,255,255,.95)}
@@ -165,9 +165,9 @@ h1, h2, h3, h4, p, a{
 .bsWhatsNewDive{box-shadow: 0 0 1rem .5rem #3498db}
 
 .bs1{box-shadow: 0 0 1rem .1rem black}
-.bs2{box-shadow: 0 0 1rem .5rem #de3c4b}
+.bs2{box-shadow: 0 0 1rem .5rem #bf0606}
 
-.b1{border: 2px solid #de3c4b}
+.b1{border: 2px solid #bf0606}
 
 .br1{border-radius: .5rem}
 

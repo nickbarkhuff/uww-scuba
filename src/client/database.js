@@ -11,9 +11,9 @@ import {
     discoverScuba,
     openWater,
     divemaster,
-    gretchenSlack,
-    daveIshmael,
-    davidFrye,
+    laurie,
+    ken,
+    jeri,
     advancedOpenWater,
     alki,
     pnw,
@@ -74,35 +74,29 @@ export const database = {
         image: divemaster
     }],
     staff: [{
-        firstName: "Gretchen",
-        lastName: "Slack",
-        title: "Owner & Training Director",
+        firstName: "Laurie",
+        lastName: "Hannula",
+        title: "Owner",
         description: [
-            "I started diving in 2003, taking my Basic Open Water Diver training here at Under Water Works. While not initially sold on the idea of Scuba Diving, by the time I took my first breath underwater, I was hooked, and have had some amazing experiences underwater since! By far the majority of my diving has been in the Pacific Northwest, and even after visiting several warm water locations, it is still my favourite place to dive! The life in the Pacific Northwest is amazingly beautiful and abundant, and I continue to have new and unique experiences, even at dive sites I've visited hundreds of times.",
-            "I 'grew up' at this shop, taking most of my classes from the other Instructors here, and working here, first part time, then full time, now owning and managing the shop. I am incredibly lucky to be surrounded by a strong and passionate staff of Instructors and Divemasters, and have met some of my closest friends through this shop. I became a Divemaster in 2009, and then continued on to get my Instructor rating in 2011. I hope that you decide to start or continue your diving education with us! All of the staff here are passionate about Pacific Northwest diving, and we're excited to introduce you to it!"
+            "Have lived my whole life in the Pacific Northwest and I really enjoy it here. I knew that the first time I went underwater that this was now going to be my new home away from home you might say. I completed my first step to the underwater adventure in 1977 at Clark College through Underwater Sports in Vancouver, WA. Before I finished my training I was already working at the dive center, I started out mending wetsuits. I took every possible type of training, purchased all my scuba equipment before my open water training dives and went to any seminar that was about diving that I could. I eventually was a full time employee and staff member of Underwater Sports. I then worked my way up to Assistant Instructor, and then took that very rewarding step as an Scuba Instructor in 1982.",
         ],
-        image: gretchenSlack
+        image: laurie
     }, {
-        firstName: "Dave",
-        lastName: "Ishmael",
-        title: "Service Technician",
+        firstName: "Ken",
+        lastName: "Prentice",
+        title: "Instructor",
         description: [
-            "As a child I learned of Scuba Diving by watching Sea Hunt and Jacques Cousteau TV programs. I decided as a boy I wanted to become a professional diver and explore the underwater world. I became certified as a NAUI Scuba Diver in 1976 and worked my way up the NAUI ranks. In 1986 I became a PADI Instructor, and have also been a Certified Equipment Technician for over 30 years. My diving has taken me to the Caribbean, Mexico, Hawaii, and Canada, although my favorite dives have been here in the Pacific Northwest.",
-            "I've been fortunate to be with Under Water Works for over 30 years. Between helping Gretchen with dive store operations, diving equipment repair and teaching Scuba diving, I've lived my passion. Please visit our dive store so we can show you our experience and professionalism, and we can get you on the road to exploring the under water world. "
+            "Growing up in the Pacific Northwest as one of the many baby boomers, like the rest of those fortunate few I was exposed to early television shows. Some of them were; Flipper, Voyage to the Bottom of the Sea, Sea Hunt and the most amazing Jacques Cousteau specials and his son Philip. With such influence in my youth I skin-dived in the bathtub, swimming pool, pond, river and horse trough; I had a great imagination. It was not until 1990 that I was exposed to my first scuba diving experience. I signed up for a Discover Scuba program; the first breath I took under water opened the most amazing door that any one can pass through. The realization that you don't have to go to the surface for a breath of air was great. I then certified as a PADI Open Water Diver at Pacific Watersports in 1991 and that's when I truly became addicted to compressed air, ok scuba diving. My diving addiction is a good and healthy sport. From that point on I knew that I wanted to become a professional in this sport. It has become a life changing experience so much that in 1995 I was certified as a PADI Instructor and closed my business shortly after that. I now have dedicated my life to my profession of scuba diving. I teach all levels of courses Open Water, Advanced, Rescue, Divemaster and many specialties. ",
         ],
-        image: daveIshmael
+        image: ken
     }, {
-        firstName: "David",
-        lastName: "Frye",
-        title: "Master Scuba Diver",
+        firstName: "Jeri",
+        lastName: "Moreira",
+        title: "Dive Master",
         description: [
-            "From an early age I have enjoyed being in, on, and around water. As a result, I have participated in many water related activities: competitive swimming, water polo, lifeguard, Water Safety Instructor, freediver, scuba diver, scuba instructor, and boat captain.",
-            "Soon after being certified as a PADI Open Water Diver, I found that I wasn't able to dive as often as I might like so I quickly took my continuing education classes of Enriched Air Nitrox, Advanced Open Water, and Rescue diver. I still wasn’t diving enough and that had me dreaming about the future and how to dive more often.",
-            "The plan I came up with involved becoming a Divemaster and then a scuba instructor in order to live and teach abroad. As that plan was realized, I spent two years traveling and working in Thailand, Hawaii, the Bahamas, and the Florida Keys before landing in the British Virgin Islands for about 18 months, and then another year in Hawaii.",
-            "Having had the opportunity to dive in all kinds of conditions and locations, work with all types of students and dive professionals, try different types of gear, and experience several cultures around the world, I feel that I have a unique insight into the underwater world.",
-            "I look forward to having you join me in the classroom, pool, or open water environment for your next scuba course so I may share some of these experiences with you."
+            "As the story goes it all started with seeing my father's dive gear. Of course, this was old school double hose, neoprene wet suit with no nylon inside or outside. Wow, I wanted to SCUBA dive however; I was only six years old. As time progressed my sister bought me a mask, fins and snorkel at age 12. I was hooked. I would snorkel in the rivers in Oakridge and yes, it was cold but I endured it. So when I was in high school my teacher was a SCUBA instructor and shared many stories of his adventures. I signed up for lessons and started diving in 1980 from a dive shop in Portland, Oregon. I was hooked for many years then got out of it since my kids were not interested in it. Many years later, I went to Hawaii for vacation, I thought to myself, I should go diving since I would be in paradise and all my previous dives were in the Great Pacific Northwest, which is still my preference. Wow, my first thought as I hit the water was WHY DID I STOP? As soon as I got back, I found Pacific Watersports, bought my dive gear and decided to continue my diving education where I left off, so I signed up to finish my Dive Master program. Now I can't get enough of diving. I would be happy even diving in a mud puddle. I love helping others learn to dive, be safe, and show them a whole another world that only a few get to experience. I LOVE IT!",
         ],
-        image: davidFrye
+        image: jeri
     }],
     whatsNew: [{
         name: "Aqua Lung i770R Dive Computer",

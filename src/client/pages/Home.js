@@ -12,7 +12,7 @@ const Jumbotron = () => {
             <section className={"CtaDisplay bg1Light taCenter c2 p2 br1 FadeInRight " + trigger}>
                 <span ref={ref}/>
                 <h1 className="fs4 fwBold pb1">Your diving adventure starts here</h1>
-                <p className="fs2 pb2">Discover an exciting new world, right here in the Pacific Northwest!</p>
+                <p className="fs2 pb2">Discover an exciting new world, right here in the Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
                     <div className="CtaButtonsGapPositive flex1">
                         <Button to="/classes" block>Take a Class</Button>
@@ -48,7 +48,7 @@ const Video = () => {
     return (
         <div className="Gutters">
             <section className={"c2 taCenter FadeIn " + trigger}>
-                <h2 className="fs4 fwBold pb1" ref={ref}>Welcome to UWW!</h2>
+                <h2 className="fs4 fwBold pb1" ref={ref}>Welcome to Pacific Watersports!</h2>
                 <div className="dInlineBlock w1">
                     <YouTubeEmbed src="https://www.youtube.com/embed/Io1OF2OkTWY"/>
                     <p className="pt1">
@@ -85,7 +85,7 @@ const Classes = () => {
             <section className={"c2 fs2 taCenter FadeIn " + trigger}>
                 <h2 className="fs4 pb1 fwBold" ref={ref}>Jump right in</h2>
                 <p className="pb2 w1 dInlineBlock">
-                    No matter your level of experience, we have something for you! Our PADI instructors are dedicated to teaching newcomers about this rewarding sport, and advancing the skills of those with many dives already logged. At Under Water Works, <strong>our top priority is always safety</strong>; you'll learn how to look out for yourself and others in a controlled, well-supervised environment.
+                    No matter your level of experience, we have something for you! Our PADI instructors are dedicated to teaching newcomers about this rewarding sport, and advancing the skills of those with many dives already logged. At Pacific Watersports, <strong>our top priority is always safety</strong>; you'll learn how to look out for yourself and others in a controlled, well-supervised environment.
                 </p>
                 <div className="pb2">
                     <div className="CoursesGapNegative CoursesDirection dFlex">
@@ -110,7 +110,7 @@ const Equipment = () => {
         <div className={"Gutters bgSizeCover bgPositionCenter"} style={{backgroundImage: `url(${equipment})`}}>
             <section className={"taCenter pt4 pb4 c2 FadeIn " + trigger}>
                 <h2 className="fs4 fwBold pb1" ref={ref}>Is your equipment in good hands?</h2>
-                <p className="fs3 pb2">Our technician has over 35 years of experience.</p>
+                <p className="fs3 pb2">Our technicians have years of experience.</p>
                 <Button to="/equipment">Maintenance Services</Button>
             </section>
         </div>
@@ -126,16 +126,13 @@ const About = () => {
             <section className={"c2 fs2 taJustify FadeIn " + sectionTrigger}>
                 <h2 className="fs4 pb1 taCenter fwBold" ref={sectionRef}>About us</h2>
                 <p className="pb1">
-                    Under Water Works was opened in 1975, by Jerry and Hilde Rood. They first began by teaching classes at Tigard High School, and opened the retail shop shortly afterwards. Hilde owned Under Water Works for forty years, and sold it in 2015 to Gretchen Slack.
+                    The staff at Pacific Watersports is the finest you'll find anywhere.
                 </p>
                 <p className="pb1">
-                    At Under Water Works, we are are passionate about making your diving experience as good as it can be! We love scuba diving, and are excited to share it with you. Whether you're interested in learning to dive, continue your diving education, purchase equipment, or get information about dive travel, we would love to share any information we have with you!
-                </p>
-                <p className="pb1">
-                    We believe in an honest and straight forward approach to diving. Our PADI Instructors will teach you the information you need to be a safe, and independent diver. If you're looking to purchase equipment, we will strive to find what will work best for you, and the type of diving you love.
+                    Our instructional team comprises of PADI Instructors and  PADI Dive Masters. The staff at Pacific Watersports has over 40 years experience in scuba diving and many of our instructors are Master Scuba Diver Trainers (MSDT). The store staff is also very experienced and they are always happy to use their knowledge to help customers make good choices whether shopping for equipment, looking to increase their training level or planning a dive trip. This brings us too our store Mission Statement: <strong>Let us help you, get what works best for you, no high pressure, just good honest sales, service and instruction.</strong>
                 </p>
                 <p className="pb2">
-                    Come in, and meet our staff, and check out our shop!
+                    We all love, enjoy, have fun at what we do and we know that you will too.
                 </p>
                 <div className="pb2">
                     <div className="StaffGapNegative StaffDirection dFlex aiCenter" ref={cardsRef}>

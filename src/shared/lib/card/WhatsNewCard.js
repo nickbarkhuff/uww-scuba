@@ -27,7 +27,7 @@ export const WhatsNewCard = (props) => {
         [types["video"]]: "YouTube Video",
         [types["item"]]: "Inventory Item",
         [types["class"]]: "Upcoming Class",
-        [types["dive"]]: "Fun Dive Day"
+        [types["dive"]]: "Fun Shore Dive"
     }[props.type];
 
     return (

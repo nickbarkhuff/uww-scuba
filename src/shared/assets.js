@@ -11,9 +11,9 @@ import discoverScuba from "./assets/classes/discover-scuba.jpeg";
 import divemaster from "./assets/classes/divemaster.jpeg";
 import openWater from "./assets/classes/open-water.jpeg";
 
-import daveIshmael from "./assets/staff/dave-ishmael.png";
-import davidFrye from "./assets/staff/david-frye.png";
-import gretchenSlack from "./assets/staff/gretchen-slack.png";
+import laurie from "./assets/staff/laurie.png";
+import ken from "./assets/staff/ken.png";
+import jeri from "./assets/staff/jeri.png";
 
 import advancedOpenWater from "./assets/whats-new/advanced-open-water.jpg";
 import alki from "./assets/whats-new/alki-beach.jpg";
@@ -39,9 +39,9 @@ export {
     divemaster,
     openWater,
 
-    daveIshmael,
-    davidFrye,
-    gretchenSlack,
+    laurie,
+    ken,
+    jeri,
 
     advancedOpenWater,
     alki,

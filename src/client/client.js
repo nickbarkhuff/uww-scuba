@@ -17,7 +17,7 @@ ReactDOM.render(
 	(
 		<BrowserRouter>
 			<ObserverWrapper>
-				<Helmet titleTemplate="UWW | %s">
+				<Helmet titleTemplate="PWS | %s">
 					<link rel="icon" href={favicon}/>
 				</Helmet>
 				<App/>

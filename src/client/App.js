@@ -123,7 +123,7 @@ export const App = () => {
                         <Button to="#top" style="transparent" raw small block>↑ Resurface ↑</Button>
                     </div>
                     <div className="flex1 fwBold fs2 taCenter FooterItemSpacing">
-                        © {new Date().getFullYear()} Under Water Works
+                        © {new Date().getFullYear()} Pacific Watersports
                     </div>
                     <div>
                         <Button to="#top" style="transparent" raw small block>↑ Resurface ↑</Button>
