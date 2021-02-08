@@ -12,7 +12,7 @@ const Jumbotron = () => {
             <section className={"CtaDisplay bg1Light taCenter c2 p2 br1 FadeInRight " + trigger}>
                 <span ref={ref}/>
                 <h1 className="fs4 fwBold pb1">Your diving adventure starts here</h1>
-                <p className="fs2 pb2">Discover an exciting new world, right here in the Northwest!</p>
+                <p className="fs2 pb2">Discover an exciting new world, right here in the beautiful Northwest!</p>
                 <div className="CtaButtonsGapNegative CtaButtonsDirection dFlex">
                     <div className="CtaButtonsGapPositive flex1">
                         <Button to="/classes" block>Take a Class</Button>
